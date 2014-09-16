@@ -3,14 +3,14 @@ title: ChaiScript-cfd4a73a895ff01c04c6dc63b20bda222cf1ec66-i386-Windows-8.1-Visu
 permalink: ChaiScript-cfd4a73a895ff01c04c6dc63b20bda222cf1ec66-i386-Windows-8.1-VisualStudio-12.html
 tags: data
 layout: ci_results
-date: 2014-09-16 20:42:27
+date: 2014-09-16 21:07:01
 unhandled_failure: false
 build_error_count: 0
-build_warning_count: 0
+build_warning_count: 3
 package_error_count: 0
 package_warning_count: 0
-test_count: 0
-test_passed_count: 0
+test_count: 326
+test_passed_count: 326
 repository: ChaiScript/ChaiScript
 compiler: Visual Studio
 compiler_version: 12
@@ -23,15 +23,15 @@ package_name:
 tag_name: 
 commit_sha: cfd4a73a895ff01c04c6dc63b20bda222cf1ec66
 branch_name: enable_decent_ci
-test_run: false
+test_run: true
 pull_request_issue_id: ""
 pull_request_base_repository: 
 pull_request_base_ref: 
 device_id: i386-Windows-8.1-VisualStudio-12
-pending: true
+pending: false
 analyze_only: false
-build_time: 
-test_time: 
+build_time: 1415.005693
+test_time: 44.891804
 package_time: 
 install_time: 
 machine_name: ci-win81
@@ -40,10 +40,2963 @@ machine_ip: 10.0.2.15
 
 {
   "build_results": [
-
+    {
+      "filename": "include/chaiscript/language/chaiscript_eval.hpp",
+      "linenumber": "1422",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "'>' : signed/unsigned mismatch"
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_eval.hpp",
+      "linenumber": "1427",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "'>' : signed/unsigned mismatch"
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_eval.hpp",
+      "linenumber": "1434",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "'>' : signed/unsigned mismatch"
+    }
   ],
   "test_results": [
+    {
+      "name": "version_check",
+      "status": "passed",
+      "time": "0.541235",
+      "output": null,
+      "parsed_errors": [
 
+      ]
+    },
+    {
+      "name": "3.x/assign_const.chai",
+      "status": "passed",
+      "time": "0.11101",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/bind.chai",
+      "status": "passed",
+      "time": "0.124842",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/bind2.chai",
+      "status": "passed",
+      "time": "0.111067",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/block_start.chai",
+      "status": "passed",
+      "time": "0.124849",
+      "output": "hello\n",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/bool_not.chai",
+      "status": "passed",
+      "time": "0.11097",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/break_while.chai",
+      "status": "passed",
+      "time": "0.124907",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/char_init.chai",
+      "status": "passed",
+      "time": "0.124905",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/classification.chai",
+      "status": "passed",
+      "time": "0.124939",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/collate.chai",
+      "status": "passed",
+      "time": "0.0970554",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/compare_gt.chai",
+      "status": "passed",
+      "time": "0.0971107",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/compare_lt.chai",
+      "status": "passed",
+      "time": "0.111017",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/concat.chai",
+      "status": "passed",
+      "time": "0.124937",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/const_range_test.chai",
+      "status": "passed",
+      "time": "0.12483",
+      "output": "H\ne\nl\nl\no\n \nW\no\nr\nl\nd\n",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/convert_double_string.chai",
+      "status": "passed",
+      "time": "0.125015",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/convert_int_string.chai",
+      "status": "passed",
+      "time": "0.124886",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/convert_string_double.chai",
+      "status": "passed",
+      "time": "0.0970764",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/convert_string_int.chai",
+      "status": "passed",
+      "time": "0.0971012",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/deep_array_lookup.chai",
+      "status": "passed",
+      "time": "0.138821",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/dispatch_functions.chai",
+      "status": "passed",
+      "time": "0.124823",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/drop.chai",
+      "status": "passed",
+      "time": "0.124781",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/drop_while.chai",
+      "status": "passed",
+      "time": "0.12484",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/empty.chai",
+      "status": "passed",
+      "time": "0.110996",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/equ_shortform.chai",
+      "status": "passed",
+      "time": "0.11105",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/eval.chai",
+      "status": "passed",
+      "time": "0.0970745",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/eval_error.chai",
+      "status": "passed",
+      "time": "0.152721",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/even.chai",
+      "status": "passed",
+      "time": "0.124861",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/exception.chai",
+      "status": "passed",
+      "time": "0.111046",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/exception_finally.chai",
+      "status": "passed",
+      "time": "0.110987",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/exception_guards.chai",
+      "status": "passed",
+      "time": "0.124878",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/filter.chai",
+      "status": "passed",
+      "time": "0.111065",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/float.chai",
+      "status": "passed",
+      "time": "0.0970802",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/foldl.chai",
+      "status": "passed",
+      "time": "0.0971756",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/for.chai",
+      "status": "passed",
+      "time": "0.13891",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/for_each.chai",
+      "status": "passed",
+      "time": "0.124712",
+      "output": "1\n2\n3\n",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/for_each_range.chai",
+      "status": "passed",
+      "time": "0.124891",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/for_each_retro.chai",
+      "status": "passed",
+      "time": "0.166529",
+      "output": "3\n2\n1\n",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/function_array_adjacent.chai",
+      "status": "passed",
+      "time": "0.111019",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/function_introspection.chai",
+      "status": "passed",
+      "time": "0.124743",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/function_reassignment.chai",
+      "status": "passed",
+      "time": "0.124884",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/generate_range.chai",
+      "status": "passed",
+      "time": "0.138767",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/global_const_in_module.chai",
+      "status": "passed",
+      "time": "0.166515",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/if.chai",
+      "status": "passed",
+      "time": "0.111",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/if_else.chai",
+      "status": "passed",
+      "time": "0.166468",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/if_elseif.chai",
+      "status": "passed",
+      "time": "0.0970726",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/if_elseif_else.chai",
+      "status": "passed",
+      "time": "0.235876",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/index_operator.chai",
+      "status": "passed",
+      "time": "0.152054",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/inheritance.chai",
+      "status": "passed",
+      "time": "0.166574",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/instring_eval.chai",
+      "status": "passed",
+      "time": "0.18034",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/instring_eval_more.chai",
+      "status": "passed",
+      "time": "0.163481",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/invalid_function_assignment.chai",
+      "status": "passed",
+      "time": "0.112394",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/invalid_function_reassignment.chai",
+      "status": "passed",
+      "time": "0.124807",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/is_undef.chai",
+      "status": "passed",
+      "time": "0.112635",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/join.chai",
+      "status": "passed",
+      "time": "0.12488",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/lambda.chai",
+      "status": "passed",
+      "time": "0.137392",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/list_push_back.chai",
+      "status": "passed",
+      "time": "0.237268",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/list_push_front.chai",
+      "status": "passed",
+      "time": "0.149836",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/load_module.chai",
+      "status": "passed",
+      "time": "0.0999165",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/loop_inner_outer.chai",
+      "status": "passed",
+      "time": "0.0874329",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/malformed_inline_map.chai",
+      "status": "passed",
+      "time": "0.0874577",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/map.chai",
+      "status": "passed",
+      "time": "0.112389",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/map_access.chai",
+      "status": "passed",
+      "time": "0.0997868",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/map_inplace_init.chai",
+      "status": "passed",
+      "time": "0.21241",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_add.chai",
+      "status": "passed",
+      "time": "0.112438",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_add_mixed.chai",
+      "status": "passed",
+      "time": "0.099865",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_dec.chai",
+      "status": "passed",
+      "time": "0.112381",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_div.chai",
+      "status": "passed",
+      "time": "0.112621",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_inc.chai",
+      "status": "passed",
+      "time": "0.0998878",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_mod.chai",
+      "status": "passed",
+      "time": "0.0874481",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_mult.chai",
+      "status": "passed",
+      "time": "0.124924",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_negate.chai",
+      "status": "passed",
+      "time": "0.0999584",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_paren.chai",
+      "status": "passed",
+      "time": "0.099926",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_sub.chai",
+      "status": "passed",
+      "time": "0.0998936",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/max.chai",
+      "status": "passed",
+      "time": "0.0874043",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/memberscope.chai",
+      "status": "passed",
+      "time": "0.124897",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/method_sugar.chai",
+      "status": "passed",
+      "time": "0.124907",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/min.chai",
+      "status": "passed",
+      "time": "0.0997009",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/mmd1.chai",
+      "status": "passed",
+      "time": "0.099905",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/mmd2.chai",
+      "status": "passed",
+      "time": "0.1499",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/multiline.chai",
+      "status": "passed",
+      "time": "0.112425",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/number_formats.chai",
+      "status": "passed",
+      "time": "0.112339",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/object_attr.chai",
+      "status": "passed",
+      "time": "0.11235",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/object_attr_same_name.chai",
+      "status": "passed",
+      "time": "0.13736",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/object_clone.chai",
+      "status": "passed",
+      "time": "0.0998611",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/object_constructor_guards.chai",
+      "status": "passed",
+      "time": "0.124905",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/object_method_guards.chai",
+      "status": "passed",
+      "time": "0.0998878",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/odd.chai",
+      "status": "passed",
+      "time": "0.0874081",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/operator_overload.chai",
+      "status": "passed",
+      "time": "0.112429",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/operator_overload2.chai",
+      "status": "passed",
+      "time": "0.149881",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/operators_float.chai",
+      "status": "passed",
+      "time": "0.124872",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/operators_int.chai",
+      "status": "passed",
+      "time": "0.099905",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/pair.chai",
+      "status": "passed",
+      "time": "0.0999165",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/pointer_passed_to_constructor.chai",
+      "status": "passed",
+      "time": "0.0999432",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/precedence_1.chai",
+      "status": "passed",
+      "time": "0.0999603",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/precedence_2.chai",
+      "status": "passed",
+      "time": "0.137403",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/precedence_3.chai",
+      "status": "passed",
+      "time": "0.0999622",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/precedence_eq.chai",
+      "status": "passed",
+      "time": "0.112377",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/product.chai",
+      "status": "passed",
+      "time": "0.099823",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/range.chai",
+      "status": "passed",
+      "time": "0.1124",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/range_back.chai",
+      "status": "passed",
+      "time": "0.0999203",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/range_contains.chai",
+      "status": "passed",
+      "time": "0.112289",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/range_find.chai",
+      "status": "passed",
+      "time": "0.111971",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/range_inplace.chai",
+      "status": "passed",
+      "time": "0.187317",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/reduce.chai",
+      "status": "passed",
+      "time": "0.112391",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/ref_equal.chai",
+      "status": "passed",
+      "time": "0.0999088",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/reflection_test.chai",
+      "status": "passed",
+      "time": "0.0998993",
+      "output": "\n",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/retro.chai",
+      "status": "passed",
+      "time": "0.112427",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/retroretro.chai",
+      "status": "passed",
+      "time": "0.124865",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/return.chai",
+      "status": "passed",
+      "time": "0.112402",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/runtime_error.chai",
+      "status": "passed",
+      "time": "0.149813",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/shift.chai",
+      "status": "passed",
+      "time": "0.0874252",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_charptr.chai",
+      "status": "passed",
+      "time": "0.0874348",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_concat.chai",
+      "status": "passed",
+      "time": "0.0999088",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_find.chai",
+      "status": "passed",
+      "time": "0.0950012",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_find_first_not_of.chai",
+      "status": "passed",
+      "time": "0.101143",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_find_first_of.chai",
+      "status": "passed",
+      "time": "0.101175",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_find_last_not_of.chai",
+      "status": "passed",
+      "time": "0.112389",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_find_last_of.chai",
+      "status": "passed",
+      "time": "0.0902653",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_init.chai",
+      "status": "passed",
+      "time": "0.089674",
+      "output": "bob\n",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_literal_access.chai",
+      "status": "passed",
+      "time": "0.0900841",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_rfind.chai",
+      "status": "passed",
+      "time": "0.101135",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/sum.chai",
+      "status": "passed",
+      "time": "0.0899181",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/switch_break.chai",
+      "status": "passed",
+      "time": "0.123739",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/switch_default.chai",
+      "status": "passed",
+      "time": "0.101131",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/switch_empty.chai",
+      "status": "passed",
+      "time": "0.101154",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/switch_fallthru.chai",
+      "status": "passed",
+      "time": "0.123646",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/switch_fallthru_and_break.chai",
+      "status": "passed",
+      "time": "0.101068",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/take.chai",
+      "status": "passed",
+      "time": "0.1012",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/take_while.chai",
+      "status": "passed",
+      "time": "0.0898628",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/type_info.chai",
+      "status": "passed",
+      "time": "0.101164",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/use.chai",
+      "status": "passed",
+      "time": "0.10125",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_access.chai",
+      "status": "passed",
+      "time": "0.0786858",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_erase_at.chai",
+      "status": "passed",
+      "time": "0.0898991",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_inplace_init.chai",
+      "status": "passed",
+      "time": "0.123629",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_insert_at.chai",
+      "status": "passed",
+      "time": "0.123631",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_literal_acccess.chai",
+      "status": "passed",
+      "time": "0.101202",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_of_one.chai",
+      "status": "passed",
+      "time": "0.0899029",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_paren_literal_access.chai",
+      "status": "passed",
+      "time": "0.101198",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_push_back.chai",
+      "status": "passed",
+      "time": "0.101128",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_push_empty.chai",
+      "status": "passed",
+      "time": "0.101282",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/zip.chai",
+      "status": "passed",
+      "time": "0.112331",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/zip_with.chai",
+      "status": "passed",
+      "time": "0.157694",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "assign_const.chai",
+      "status": "passed",
+      "time": "0.112045",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "bind.chai",
+      "status": "passed",
+      "time": "0.101093",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "bind2.chai",
+      "status": "passed",
+      "time": "0.101261",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "block_start.chai",
+      "status": "passed",
+      "time": "0.0899544",
+      "output": "hello\n",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "bool_not.chai",
+      "status": "passed",
+      "time": "0.0900059",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "break_for.chai",
+      "status": "passed",
+      "time": "0.101328",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "break_while.chai",
+      "status": "passed",
+      "time": "0.101156",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "char_init.chai",
+      "status": "passed",
+      "time": "0.08992",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "class.chai",
+      "status": "passed",
+      "time": "0.10117",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "classification.chai",
+      "status": "passed",
+      "time": "0.0903015",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "collate.chai",
+      "status": "passed",
+      "time": "0.0899391",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "compare_gt.chai",
+      "status": "passed",
+      "time": "0.0899105",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "compare_lt.chai",
+      "status": "passed",
+      "time": "0.0899506",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "concat.chai",
+      "status": "passed",
+      "time": "0.123627",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "const_range_test.chai",
+      "status": "passed",
+      "time": "0.157368",
+      "output": "H\ne\nl\nl\no\n \nW\no\nr\nl\nd\n",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "continue_for.chai",
+      "status": "passed",
+      "time": "0.0900345",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "continue_while.chai",
+      "status": "passed",
+      "time": "0.0899658",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "convert_double_string.chai",
+      "status": "passed",
+      "time": "0.0899124",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "convert_int_string.chai",
+      "status": "passed",
+      "time": "0.0899105",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "convert_string_double.chai",
+      "status": "passed",
+      "time": "0.101109",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "convert_string_int.chai",
+      "status": "passed",
+      "time": "0.0899315",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "deep_array_lookup.chai",
+      "status": "passed",
+      "time": "0.101143",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "dispatch_functions.chai",
+      "status": "passed",
+      "time": "0.0899963",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "drop.chai",
+      "status": "passed",
+      "time": "0.101145",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "drop_while.chai",
+      "status": "passed",
+      "time": "0.101099",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "empty.chai",
+      "status": "passed",
+      "time": "0.101194",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "equ_shortform.chai",
+      "status": "passed",
+      "time": "0.0899334",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "eval.chai",
+      "status": "passed",
+      "time": "0.112366",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "eval_error.chai",
+      "status": "passed",
+      "time": "0.08992",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "even.chai",
+      "status": "passed",
+      "time": "0.101149",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "exception.chai",
+      "status": "passed",
+      "time": "0.0786972",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "exception_finally.chai",
+      "status": "passed",
+      "time": "0.124218",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "exception_guards.chai",
+      "status": "passed",
+      "time": "0.101189",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "filter.chai",
+      "status": "passed",
+      "time": "0.112429",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "float.chai",
+      "status": "passed",
+      "time": "0.0899315",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "foldl.chai",
+      "status": "passed",
+      "time": "0.0899105",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "for.chai",
+      "status": "passed",
+      "time": "0.0898685",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "for_each.chai",
+      "status": "passed",
+      "time": "0.101185",
+      "output": "1\n2\n3\n",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "for_each_range.chai",
+      "status": "passed",
+      "time": "0.0899029",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "for_each_retro.chai",
+      "status": "passed",
+      "time": "0.104115",
+      "output": "3\n2\n1\n",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "function_array_adjacent.chai",
+      "status": "passed",
+      "time": "0.101185",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "function_introspection.chai",
+      "status": "passed",
+      "time": "0.101156",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "function_reassignment.chai",
+      "status": "passed",
+      "time": "0.0708237",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "function_redefinition.chai",
+      "status": "passed",
+      "time": "0.0708122",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "generate_range.chai",
+      "status": "passed",
+      "time": "0.0808697",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "global_const_in_module.chai",
+      "status": "passed",
+      "time": "0.0909328",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "global_in_script.chai",
+      "status": "passed",
+      "time": "0.101133",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "hashbang.chai",
+      "status": "passed",
+      "time": "0.121433",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "if.chai",
+      "status": "passed",
+      "time": "0.0910187",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "if_else.chai",
+      "status": "passed",
+      "time": "0.0807285",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "if_elseif.chai",
+      "status": "passed",
+      "time": "0.0809288",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "if_elseif_else.chai",
+      "status": "passed",
+      "time": "0.0911083",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "index_operator.chai",
+      "status": "passed",
+      "time": "0.0910053",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "inheritance.chai",
+      "status": "passed",
+      "time": "0.0910873",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "instring_eval.chai",
+      "status": "passed",
+      "time": "0.141575",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "instring_eval_more.chai",
+      "status": "passed",
+      "time": "0.0808849",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "invalid_function_assignment.chai",
+      "status": "passed",
+      "time": "0.0808907",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "invalid_function_reassignment.chai",
+      "status": "passed",
+      "time": "0.0809288",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "is_undef.chai",
+      "status": "passed",
+      "time": "0.0910378",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "join.chai",
+      "status": "passed",
+      "time": "0.0910683",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "lambda.chai",
+      "status": "passed",
+      "time": "0.090992",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "list_push_back.chai",
+      "status": "passed",
+      "time": "0.0910625",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "list_push_front.chai",
+      "status": "passed",
+      "time": "0.0910397",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "load_module.chai",
+      "status": "passed",
+      "time": "0.0809593",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "loop_inner_outer.chai",
+      "status": "passed",
+      "time": "0.080904",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "malformed_inline_map.chai",
+      "status": "passed",
+      "time": "0.0708141",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "map.chai",
+      "status": "passed",
+      "time": "0.101166",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "map_access.chai",
+      "status": "passed",
+      "time": "0.0808697",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "map_count.chai",
+      "status": "passed",
+      "time": "0.0910358",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "map_inplace_init.chai",
+      "status": "passed",
+      "time": "0.0809784",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_add.chai",
+      "status": "passed",
+      "time": "0.111298",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_add_mixed.chai",
+      "status": "passed",
+      "time": "0.0809078",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_dec.chai",
+      "status": "passed",
+      "time": "0.0726395",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_div.chai",
+      "status": "passed",
+      "time": "0.0892506",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_inc.chai",
+      "status": "passed",
+      "time": "0.0809174",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_mod.chai",
+      "status": "passed",
+      "time": "0.0809212",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_mult.chai",
+      "status": "passed",
+      "time": "0.0707989",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_negate.chai",
+      "status": "passed",
+      "time": "0.0707817",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_paren.chai",
+      "status": "passed",
+      "time": "0.0809288",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_sub.chai",
+      "status": "passed",
+      "time": "0.0809746",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "max.chai",
+      "status": "passed",
+      "time": "0.0809574",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "member_variable_access.chai",
+      "status": "passed",
+      "time": "0.101093",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "memberscope.chai",
+      "status": "passed",
+      "time": "0.111231",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "method_sugar.chai",
+      "status": "passed",
+      "time": "0.0809345",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "min.chai",
+      "status": "passed",
+      "time": "0.0705414",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "mmd1.chai",
+      "status": "passed",
+      "time": "0.080925",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "mmd2.chai",
+      "status": "passed",
+      "time": "0.0808964",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "multiline.chai",
+      "status": "passed",
+      "time": "0.0910416",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "multiline_oper.chai",
+      "status": "passed",
+      "time": "0.0912685",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "number_formats.chai",
+      "status": "passed",
+      "time": "0.0809231",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "number_suffixes.chai",
+      "status": "passed",
+      "time": "0.0606804",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "object_attr.chai",
+      "status": "passed",
+      "time": "0.0809231",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "object_attr_same_name.chai",
+      "status": "passed",
+      "time": "0.0910549",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "object_clone.chai",
+      "status": "passed",
+      "time": "0.0910606",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "object_constructor_guards.chai",
+      "status": "passed",
+      "time": "0.101171",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "object_method_guards.chai",
+      "status": "passed",
+      "time": "0.131483",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "odd.chai",
+      "status": "passed",
+      "time": "0.101234",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "operator_overload.chai",
+      "status": "passed",
+      "time": "0.0809345",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "operator_overload2.chai",
+      "status": "passed",
+      "time": "0.0707836",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "operator_scoping.chai",
+      "status": "passed",
+      "time": "0.0809841",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "operators_float.chai",
+      "status": "passed",
+      "time": "0.0808792",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "operators_int.chai",
+      "status": "passed",
+      "time": "0.101145",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "pair.chai",
+      "status": "passed",
+      "time": "0.080925",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "pass_by_reference.chai",
+      "status": "passed",
+      "time": "0.121399",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "pointer_passed_to_constructor.chai",
+      "status": "passed",
+      "time": "0.101215",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "precedence_1.chai",
+      "status": "passed",
+      "time": "0.0808563",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "precedence_2.chai",
+      "status": "passed",
+      "time": "0.0714512",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "precedence_3.chai",
+      "status": "passed",
+      "time": "0.0819263",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "precedence_eq.chai",
+      "status": "passed",
+      "time": "0.0819492",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "product.chai",
+      "status": "passed",
+      "time": "0.0819588",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "range.chai",
+      "status": "passed",
+      "time": "0.0819397",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "range_back.chai",
+      "status": "passed",
+      "time": "0.0728188",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "range_contains.chai",
+      "status": "passed",
+      "time": "0.0910606",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "range_find.chai",
+      "status": "passed",
+      "time": "0.072834",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "range_inplace.chai",
+      "status": "passed",
+      "time": "0.091053",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "reduce.chai",
+      "status": "passed",
+      "time": "0.0819912",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "reflection_test.chai",
+      "status": "passed",
+      "time": "0.0728226",
+      "output": "\n",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "retro.chai",
+      "status": "passed",
+      "time": "0.100155",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "retroretro.chai",
+      "status": "passed",
+      "time": "0.0819244",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "return.chai",
+      "status": "passed",
+      "time": "0.0728493",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "runtime_error.chai",
+      "status": "passed",
+      "time": "0.081871",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "scoping.chai",
+      "status": "passed",
+      "time": "0.0728226",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "shift.chai",
+      "status": "passed",
+      "time": "0.0820026",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_charptr.chai",
+      "status": "passed",
+      "time": "0.0728168",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_concat.chai",
+      "status": "passed",
+      "time": "0.0729179",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_find.chai",
+      "status": "passed",
+      "time": "0.0637531",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_find_first_not_of.chai",
+      "status": "passed",
+      "time": "0.063694",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_find_first_of.chai",
+      "status": "passed",
+      "time": "0.127487",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_find_last_not_of.chai",
+      "status": "passed",
+      "time": "0.109301",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_find_last_of.chai",
+      "status": "passed",
+      "time": "0.0730247",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_init.chai",
+      "status": "passed",
+      "time": "0.054575",
+      "output": "bob\n",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_literal_access.chai",
+      "status": "passed",
+      "time": "0.072794",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_rfind.chai",
+      "status": "passed",
+      "time": "0.0728798",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_size.chai",
+      "status": "passed",
+      "time": "0.063736",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_substr.chai",
+      "status": "passed",
+      "time": "0.0819626",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "sum.chai",
+      "status": "passed",
+      "time": "0.118359",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "switch_break.chai",
+      "status": "passed",
+      "time": "0.0728683",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "switch_default.chai",
+      "status": "passed",
+      "time": "0.081953",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "switch_empty.chai",
+      "status": "passed",
+      "time": "0.0637321",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "switch_fallthru.chai",
+      "status": "passed",
+      "time": "0.0728722",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "switch_fallthru_and_break.chai",
+      "status": "passed",
+      "time": "0.0910549",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "system_introspection.chai",
+      "status": "passed",
+      "time": "0.0910435",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "take.chai",
+      "status": "passed",
+      "time": "0.0819492",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "take_while.chai",
+      "status": "passed",
+      "time": "0.0819492",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "temporary_lifetime.chai",
+      "status": "passed",
+      "time": "0.0728283",
+      "output": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "ternary_condition.chai",
+      "status": "passed",
+      "time": "0.0819359",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "type_info.chai",
+      "status": "passed",
+      "time": "0.0728531",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "use.chai",
+      "status": "passed",
+      "time": "0.0728359",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "var_decl.chai",
+      "status": "passed",
+      "time": "0.0728207",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "var_ref_decl.chai",
+      "status": "passed",
+      "time": "0.0819931",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "variable_redefinition.chai",
+      "status": "passed",
+      "time": "0.0728092",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_access.chai",
+      "status": "passed",
+      "time": "0.0819092",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_erase_at.chai",
+      "status": "passed",
+      "time": "0.0819836",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_inplace_init.chai",
+      "status": "passed",
+      "time": "0.0819454",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_insert_at.chai",
+      "status": "passed",
+      "time": "0.0728493",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_literal_acccess.chai",
+      "status": "passed",
+      "time": "0.0728569",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_of_one.chai",
+      "status": "passed",
+      "time": "0.091013",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_of_suffixed_numbers.chai",
+      "status": "passed",
+      "time": "0.0728683",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_paren_literal_access.chai",
+      "status": "passed",
+      "time": "0.0636845",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_push_back.chai",
+      "status": "passed",
+      "time": "0.109245",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_push_empty.chai",
+      "status": "passed",
+      "time": "0.0728207",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "zip.chai",
+      "status": "passed",
+      "time": "0.081934",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "zip_with.chai",
+      "status": "passed",
+      "time": "0.0819359",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Utility_Test",
+      "status": "passed",
+      "time": "0.418852",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Dynamic_Object_Test",
+      "status": "passed",
+      "time": "0.145863",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Functor_Creation_Test",
+      "status": "passed",
+      "time": "0.136549",
+      "output": "Hello World\n",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Functor_Cast_Test",
+      "status": "passed",
+      "time": "0.145679",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Boxed_Cast_Test",
+      "status": "passed",
+      "time": "0.49675",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Object_Lifetime_Test",
+      "status": "passed",
+      "time": "0.190317",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Function_Ordering_Test",
+      "status": "passed",
+      "time": "0.1502",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Type_Info_Test",
+      "status": "passed",
+      "time": "0.110151",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Type_Name_Test",
+      "status": "passed",
+      "time": "0.15023",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Eval_Catch_Exception_Test",
+      "status": "passed",
+      "time": "0.240347",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Short_Comparison_Test",
+      "status": "passed",
+      "time": "0.160284",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "cpp_lambda_test",
+      "status": "passed",
+      "time": "0.190289",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Expected_Eval_Errors_Test",
+      "status": "passed",
+      "time": "0.160196",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Set_State_Test",
+      "status": "passed",
+      "time": "0.150167",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Simultaneous_ChaiScript_Test",
+      "status": "passed",
+      "time": "0.260403",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Heap_Allocated_ChaiScript_Test",
+      "status": "passed",
+      "time": "0.170235",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "C_Linkage_Test",
+      "status": "passed",
+      "time": "0.150219",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Integer_Literal_Test",
+      "status": "passed",
+      "time": "1.20186",
+      "output": "Comparing : 15 15\nComparing : 255 255\nComparing : 4095 4095\nComparing : 65535 65535\nComparing : 1048575 1048575\nComparing : 16777215 16777215\nComparing : 268435455 268435455\nComparing : 4294967295 4294967295\nComparing : 68719476735 68719476735\nComparing : 1099511627775 1099511627775\nComparing : 17592186044415 17592186044415\nComparing : 281474976710655 281474976710655\nComparing : 4503599627370495 4503599627370495\nComparing : 72057594037927935 72057594037927935\nComparing : 1152921504606846975 1152921504606846975\nComparing : 18446744073709551615 18446744073709551615\nComparing : 1 1\nComparing : 15 15\nComparing : 127 127\nComparing : 1023 1023\nComparing : 8191 8191\nComparing : 65535 65535\nComparing : 524287 524287\nComparing : 4194303 4194303\nComparing : 33554431 33554431\nComparing : 268435455 268435455\nComparing : 2147483647 2147483647\nComparing : 17179869183 17179869183\nComparing : 137438953471 137438953471\nComparing : 1099511627775 1099511627775\nComparing : 8796093022207 8796093022207\nComparing : 70368744177663 7...\nThe rest of the test output was removed since it exceeds the threshold of 1024 bytes.\n",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Arithmetic_Conversions_Test",
+      "status": "passed",
+      "time": "0.150225",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Multithreaded_Test",
+      "status": "passed",
+      "time": "3.35408",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "MultiFile_Test",
+      "status": "passed",
+      "time": "0.429634",
+      "output": null,
+      "parsed_errors": [
+
+      ]
+    }
   ],
   "failure": null,
   "package_results": [
