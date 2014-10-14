@@ -1,0 +1,3316 @@
+---
+title: ChaiScript-f547b4bb1021cfb2f93d2c2bc5dd2a773d87727d-x86_64-Linux-Ubuntu-14.04-gcc-4.6
+permalink: ChaiScript-f547b4bb1021cfb2f93d2c2bc5dd2a773d87727d-x86_64-Linux-Ubuntu-14.04-gcc-4.6.html
+tags: data
+layout: ci_results
+date: 2014-10-05 19:53:14
+unhandled_failure: false
+build_error_count: 46
+build_warning_count: 0
+package_error_count: 0
+package_warning_count: 0
+test_count: 327
+test_passed_count: 0
+repository: ChaiScript/ChaiScript
+compiler: gcc
+compiler_version: 4.6
+architecture: 
+os: Linux
+os_release: Ubuntu-14.04
+is_release: false
+release_packaged: false
+package_name: 
+tag_name: 
+commit_sha: f547b4bb1021cfb2f93d2c2bc5dd2a773d87727d
+branch_name: code_cleanups
+test_run: true
+pull_request_issue_id: ""
+pull_request_base_repository: 
+pull_request_base_ref: 
+device_id: x86_64-Linux-Ubuntu-14.04-gcc-4.6
+pending: false
+analyze_only: false
+build_time: 34.671054274
+test_time: 4.820369069
+package_time: 
+install_time: 
+machine_name: ubuntu-14
+machine_ip: 10.0.2.15
+---
+
+{
+  "build_results": [
+    {
+      "filename": "                 from /home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/unittests/arithmetic_conversions_test.cpp",
+      "linenumber": "3",
+      "colnumber": 0,
+      "messagetype": "error",
+      "message": "/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:29: error: ‘virtual chaiscript::detail::Any::Data::~Data()’ declared virtual cannot be defaulted in the class body\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:36: error: ‘virtual chaiscript::detail::Any::Data_Impl<T>::~Data_Impl()’ declared virtual cannot be defaulted in the class body\nIn file included from /home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/chaiscript.hpp:795:0,\n                 from /home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/unittests/arithmetic_conversions_test.cpp:3:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp:275:40: error: ‘virtual chaiscript::detail::Dispatch_Function::~Dispatch_Function()’ declared virtual cannot be defaulted in the class body\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp: In member function ‘void chaiscript::detail::Dispatch_Engine::add_object(const string&, const chaiscript::Boxed_Value&) const’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp:467:26: error: ‘class std::map<std::basic_string<char>, chaiscript::Boxed_Value>’ has no member named ‘emplace’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp: In member function ‘void chaiscript::detail::Dispatch_Engine::add_global_const(const chaiscript::Boxed_Value&, const string&)’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp:486:38: error: ‘class std::map<std::basic_string<char>, chaiscript::Boxed_Value>’ has no member named ‘emplace’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp: In member function ‘void chaiscript::detail::Dispatch_Engine::add_global(const chaiscript::Boxed_Value&, const string&)’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp:502:38: error: ‘class std::map<std::basic_string<char>, chaiscript::Boxed_Value>’ has no member named ‘emplace’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp: In member function ‘void chaiscript::detail::Dispatch_Engine::add(const chaiscript::Type_Info&, const string&)’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp:583:27: error: ‘chaiscript::detail::Dispatch_Engine::Type_Name_Map’ has no member named ‘emplace’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp: In member function ‘std::map<std::basic_string<char>, chaiscript::Boxed_Value> chaiscript::detail::Dispatch_Engine::get_function_objects() const’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp:748:18: error: ‘class std::map<std::basic_string<char>, chaiscript::Boxed_Value>’ has no member named ‘emplace’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp: In member function ‘void chaiscript::detail::Dispatch_Engine::add_function(const Proxy_Function&, const string&)’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp:1125:19: error: ‘class std::map<std::basic_string<char>, std::vector<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> > >’ has no member named ‘emplace’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp:1128:19: error: ‘class std::map<std::basic_string<char>, std::vector<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> > >’ has no member named ‘emplace’\nIn file included from /home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:16:0,\n                 from /home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_cast_helper.hpp:14,\n                 from /home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_cast.hpp:15,\n                 from /home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp:27,\n                 from /home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/chaiscript.hpp:795,\n                 from /home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/unittests/arithmetic_conversions_test.cpp:3:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: At global scope:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<int> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<int>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:144:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(T) [with T = int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = int, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:333:27:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<int>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<unsigned int> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<unsigned int>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:144:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(T) [with T = unsigned int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = unsigned int, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:459:98:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<unsigned int>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<chaiscript::dispatch::Dynamic_Object> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<chaiscript::dispatch::Dynamic_Object>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:144:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(T) [with T = chaiscript::dispatch::Dynamic_Object]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = chaiscript::dispatch::Dynamic_Object, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dynamic_object.hpp:256:71:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<chaiscript::dispatch::Dynamic_Object>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<chaiscript::dispatch::Placeholder_Object> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<chaiscript::dispatch::Placeholder_Object>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:114:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::shared_ptr<_Tp>&&) [with T = chaiscript::dispatch::Placeholder_Object]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::shared_ptr<chaiscript::dispatch::Placeholder_Object>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp:407:76:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<chaiscript::dispatch::Placeholder_Object>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<bool> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<bool>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:144:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(T) [with T = bool]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = bool, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp:860:118:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<bool>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:114:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::shared_ptr<_Tp>&&) [with T = chaiscript::dispatch::Proxy_Function_Base]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/language/chaiscript_eval.hpp:722:59:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::reference_wrapper<const std::exception> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::reference_wrapper<const std::exception>&, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:131:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::reference_wrapper<_Tp>) [with T = const std::exception]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::reference_wrapper<const std::exception>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/language/chaiscript_eval.hpp:1269:43:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::reference_wrapper<const std::exception>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<chaiscript::exception::eval_error> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<chaiscript::exception::eval_error>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:144:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(T) [with T = chaiscript::exception::eval_error]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = const chaiscript::exception::eval_error&, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/language/chaiscript_engine.hpp:297:31:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<chaiscript::exception::eval_error>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<double> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<double>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:144:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(T) [with T = double]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = double&, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:344:28:   instantiated from ‘chaiscript::Boxed_Number::Boxed_Number(T) [with T = double]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:354:47:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<double>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<float> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<float>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:144:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(T) [with T = float]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = float&, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:344:28:   instantiated from ‘chaiscript::Boxed_Number::Boxed_Number(T) [with T = float]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:356:46:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<float>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<long double> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<long double>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:144:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(T) [with T = long double]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = long double&, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:344:28:   instantiated from ‘chaiscript::Boxed_Number::Boxed_Number(T) [with T = long double]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:358:52:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<long double>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<char> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<char>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:144:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(T) [with T = char]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = char&, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:344:28:   instantiated from ‘chaiscript::Boxed_Number::Boxed_Number(T) [with T = char]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:360:45:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<char>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<long int> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<long int>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:144:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(T) [with T = long int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = long int&, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:344:28:   instantiated from ‘chaiscript::Boxed_Number::Boxed_Number(T) [with T = long int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:364:45:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<long int>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<long unsigned int> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<long unsigned int>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:144:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(T) [with T = long unsigned int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = long unsigned int&, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:344:28:   instantiated from ‘chaiscript::Boxed_Number::Boxed_Number(T) [with T = long unsigned int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:366:54:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<long unsigned int>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<signed char> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<signed char>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:144:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(T) [with T = signed char]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = signed char&, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:344:28:   instantiated from ‘chaiscript::Boxed_Number::Boxed_Number(T) [with T = signed char]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:368:47:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<signed char>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<short int> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<short int>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:144:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(T) [with T = short int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = short int&, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:344:28:   instantiated from ‘chaiscript::Boxed_Number::Boxed_Number(T) [with T = short int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:370:48:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<short int>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<unsigned char> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<unsigned char>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:144:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(T) [with T = unsigned char]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = unsigned char&, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:344:28:   instantiated from ‘chaiscript::Boxed_Number::Boxed_Number(T) [with T = unsigned char]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:376:48:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<unsigned char>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<short unsigned int> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<short unsigned int>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:144:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(T) [with T = short unsigned int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = short unsigned int&, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:344:28:   instantiated from ‘chaiscript::Boxed_Number::Boxed_Number(T) [with T = short unsigned int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:378:49:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<short unsigned int>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<const int> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<const int>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:114:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::shared_ptr<_Tp>&&) [with T = const int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::shared_ptr<const int>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:303:82:   instantiated from ‘chaiscript::Boxed_Value chaiscript::detail::const_var_impl(const T&) [with T = int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:366:38:   instantiated from ‘chaiscript::Boxed_Value chaiscript::const_var(const T&) [with T = int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_number.hpp:819:47:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const int>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<const chaiscript::Type_Info> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<const chaiscript::Type_Info>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:114:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::shared_ptr<_Tp>&&) [with T = const chaiscript::Type_Info]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::shared_ptr<const chaiscript::Type_Info>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:303:82:   instantiated from ‘chaiscript::Boxed_Value chaiscript::detail::const_var_impl(const T&) [with T = chaiscript::Type_Info]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:366:38:   instantiated from ‘chaiscript::Boxed_Value chaiscript::const_var(const T&) [with T = chaiscript::Type_Info]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp:579:40:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const chaiscript::Type_Info>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<const chaiscript::dispatch::Proxy_Function_Base> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<const chaiscript::dispatch::Proxy_Function_Base>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:114:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::shared_ptr<_Tp>&&) [with T = const chaiscript::dispatch::Proxy_Function_Base]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::shared_ptr<const chaiscript::dispatch::Proxy_Function_Base>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:325:90:   instantiated from ‘chaiscript::Boxed_Value chaiscript::detail::const_var_impl(const std::shared_ptr<_Tp>&) [with T = chaiscript::dispatch::Proxy_Function_Base]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:366:38:   instantiated from ‘chaiscript::Boxed_Value chaiscript::const_var(const T&) [with T = std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/dispatchkit.hpp:656:41:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const chaiscript::dispatch::Proxy_Function_Base>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<const bool> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<const bool>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:114:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::shared_ptr<_Tp>&&) [with T = const bool]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::shared_ptr<const bool>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:303:82:   instantiated from ‘chaiscript::Boxed_Value chaiscript::detail::const_var_impl(const T&) [with T = bool]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:366:38:   instantiated from ‘chaiscript::Boxed_Value chaiscript::const_var(const T&) [with T = bool]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/language/chaiscript_eval.hpp:171:34:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const bool>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<const double> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<const double>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:114:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::shared_ptr<_Tp>&&) [with T = const double]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::shared_ptr<const double>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:303:82:   instantiated from ‘chaiscript::Boxed_Value chaiscript::detail::const_var_impl(const T&) [with T = double]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:366:38:   instantiated from ‘chaiscript::Boxed_Value chaiscript::const_var(const T&) [with T = double]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/language/chaiscript_eval.hpp:177:69:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const double>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<const std::basic_string<char> > >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<const std::basic_string<char> >, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:114:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::shared_ptr<_Tp>&&) [with T = const std::basic_string<char>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::shared_ptr<const std::basic_string<char> >, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:303:82:   instantiated from ‘chaiscript::Boxed_Value chaiscript::detail::const_var_impl(const T&) [with T = std::basic_string<char>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:366:38:   instantiated from ‘chaiscript::Boxed_Value chaiscript::const_var(const T&) [with T = std::basic_string<char>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/language/chaiscript_eval.hpp:658:44:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const std::basic_string<char> >]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<const char> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<const char>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:114:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::shared_ptr<_Tp>&&) [with T = const char]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::shared_ptr<const char>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:303:82:   instantiated from ‘chaiscript::Boxed_Value chaiscript::detail::const_var_impl(const T&) [with T = char]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:366:38:   instantiated from ‘chaiscript::Boxed_Value chaiscript::const_var(const T&) [with T = char]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/language/chaiscript_eval.hpp:679:56:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const char>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<const std::vector<chaiscript::Boxed_Value> > >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<const std::vector<chaiscript::Boxed_Value> >, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:114:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::shared_ptr<_Tp>&&) [with T = const std::vector<chaiscript::Boxed_Value>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::shared_ptr<const std::vector<chaiscript::Boxed_Value> >, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:303:82:   instantiated from ‘chaiscript::Boxed_Value chaiscript::detail::const_var_impl(const T&) [with T = std::vector<chaiscript::Boxed_Value>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:366:38:   instantiated from ‘chaiscript::Boxed_Value chaiscript::const_var(const T&) [with T = std::vector<chaiscript::Boxed_Value>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/language/chaiscript_eval.hpp:1054:44:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const std::vector<chaiscript::Boxed_Value> >]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<const std::map<std::basic_string<char>, chaiscript::Boxed_Value> > >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<const std::map<std::basic_string<char>, chaiscript::Boxed_Value> >, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:114:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::shared_ptr<_Tp>&&) [with T = const std::map<std::basic_string<char>, chaiscript::Boxed_Value>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::shared_ptr<const std::map<std::basic_string<char>, chaiscript::Boxed_Value> >, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:303:82:   instantiated from ‘chaiscript::Boxed_Value chaiscript::detail::const_var_impl(const T&) [with T = std::map<std::basic_string<char>, chaiscript::Boxed_Value>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:366:38:   instantiated from ‘chaiscript::Boxed_Value chaiscript::const_var(const T&) [with T = std::map<std::basic_string<char>, chaiscript::Boxed_Value>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/language/chaiscript_eval.hpp:1082:36:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const std::map<std::basic_string<char>, chaiscript::Boxed_Value> >]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<const float> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<const float>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:114:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::shared_ptr<_Tp>&&) [with T = const float]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::shared_ptr<const float>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:303:82:   instantiated from ‘chaiscript::Boxed_Value chaiscript::detail::const_var_impl(const T&) [with T = float]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:366:38:   instantiated from ‘chaiscript::Boxed_Value chaiscript::const_var(const T&) [with T = float]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/language/chaiscript_parser.hpp:429:29:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const float>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<const long double> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<const long double>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:114:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::shared_ptr<_Tp>&&) [with T = const long double]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::shared_ptr<const long double>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:303:82:   instantiated from ‘chaiscript::Boxed_Value chaiscript::detail::const_var_impl(const T&) [with T = long double]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:366:38:   instantiated from ‘chaiscript::Boxed_Value chaiscript::const_var(const T&) [with T = long double]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/language/chaiscript_parser.hpp:433:29:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const long double>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<const long int> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<const long int>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:114:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::shared_ptr<_Tp>&&) [with T = const long int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::shared_ptr<const long int>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:303:82:   instantiated from ‘chaiscript::Boxed_Value chaiscript::detail::const_var_impl(const T&) [with T = long int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:366:38:   instantiated from ‘chaiscript::Boxed_Value chaiscript::const_var(const T&) [with T = long int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/language/chaiscript_parser.hpp:597:39:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const long int>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<const long unsigned int> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<const long unsigned int>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:114:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::shared_ptr<_Tp>&&) [with T = const long unsigned int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::shared_ptr<const long unsigned int>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:303:82:   instantiated from ‘chaiscript::Boxed_Value chaiscript::detail::const_var_impl(const T&) [with T = long unsigned int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:366:38:   instantiated from ‘chaiscript::Boxed_Value chaiscript::const_var(const T&) [with T = long unsigned int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/language/chaiscript_parser.hpp:533:33:   instantiated from ‘static chaiscript::Boxed_Value chaiscript::parser::ChaiScript_Parser::buildInt(const IntType&, const string&) [with IntType = std::ios_base&(std::ios_base&), std::string = std::basic_string<char>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/language/chaiscript_parser.hpp:574:121:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const long unsigned int>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::shared_ptr<const unsigned int> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::shared_ptr<const unsigned int>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:114:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::shared_ptr<_Tp>&&) [with T = const unsigned int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::shared_ptr<const unsigned int>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:303:82:   instantiated from ‘chaiscript::Boxed_Value chaiscript::detail::const_var_impl(const T&) [with T = unsigned int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:366:38:   instantiated from ‘chaiscript::Boxed_Value chaiscript::const_var(const T&) [with T = unsigned int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/language/chaiscript_parser.hpp:541:33:   instantiated from ‘static chaiscript::Boxed_Value chaiscript::parser::ChaiScript_Parser::buildInt(const IntType&, const string&) [with IntType = std::ios_base&(std::ios_base&), std::string = std::basic_string<char>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/language/chaiscript_parser.hpp:574:121:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const unsigned int>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::reference_wrapper<chaiscript::ChaiScript> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::reference_wrapper<chaiscript::ChaiScript>&, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:131:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::reference_wrapper<_Tp>) [with T = chaiscript::ChaiScript]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::reference_wrapper<chaiscript::ChaiScript>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/handle_return.hpp:96:43:   instantiated from ‘static chaiscript::Boxed_Value chaiscript::dispatch::detail::Handle_Return<Ret&>::handle(Ret&) [with Ret = chaiscript::ChaiScript]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/proxy_functions_detail.hpp:176:84:   instantiated from ‘static chaiscript::Boxed_Value chaiscript::dispatch::detail::Do_Call<Ret>::go(const std::function<_Signature>&, const std::vector<chaiscript::Boxed_Value>&, const chaiscript::Dynamic_Cast_Conversions&) [with Fun = chaiscript::ChaiScript&(const chaiscript::Boxed_Value&, const std::basic_string<char>&), Ret = chaiscript::ChaiScript&]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/proxy_functions.hpp:511:107:   instantiated from ‘chaiscript::Boxed_Value chaiscript::dispatch::Proxy_Function_Impl<Func>::do_call(const std::vector<chaiscript::Boxed_Value>&, const chaiscript::Dynamic_Cast_Conversions&) const [with Func = chaiscript::ChaiScript&(const chaiscript::Boxed_Value&, const std::basic_string<char>&)]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/unittests/arithmetic_conversions_test.cpp:70:1:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::reference_wrapper<chaiscript::ChaiScript>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp: In instantiation of ‘chaiscript::detail::Any::Data_Impl<std::reference_wrapper<long unsigned int> >’:\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:114:128:   instantiated from ‘chaiscript::detail::Any::Any(ValueType&&) [with ValueType = std::reference_wrapper<long unsigned int>&, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:131:17:   instantiated from ‘static std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get(std::reference_wrapper<_Tp>) [with T = long unsigned int]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_value.hpp:164:56:   instantiated from ‘chaiscript::Boxed_Value::Boxed_Value(T&&) [with T = std::reference_wrapper<long unsigned int>, <template-parameter-1-2> = void]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/function_call_detail.hpp:88:17:   instantiated from ‘Ret chaiscript::dispatch::detail::Build_Function_Caller_Helper<Ret, Param>::operator()(Param ...) [with Ret = unsigned int, Param = {long unsigned int}]’\n/usr/include/c++/4.6/functional:1764:40:   instantiated from ‘static _Res std::_Function_handler<_Res(_ArgTypes ...), _Functor>::_M_invoke(const std::_Any_data&, _ArgTypes ...) [with _Res = unsigned int, _Functor = chaiscript::dispatch::detail::Build_Function_Caller_Helper<unsigned int, long unsigned int>, _ArgTypes = {long unsigned int}]’\n/usr/include/c++/4.6/functional:2148:6:   [ skipping 5 instantiation contexts ]\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/function_call.hpp:94:66:   instantiated from ‘static chaiscript::detail::Cast_Helper<const std::function<Fun>&>::Result_Type chaiscript::detail::Cast_Helper<const std::function<Fun>&>::cast(const chaiscript::Boxed_Value&, const chaiscript::Dynamic_Cast_Conversions*) [with Signature = unsigned int(long unsigned int), chaiscript::detail::Cast_Helper<const std::function<Fun>&>::Result_Type = std::function<unsigned int(long unsigned int)>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/boxed_cast.hpp:78:63:   instantiated from ‘typename chaiscript::detail::Cast_Helper<T>::Result_Type chaiscript::boxed_cast(const chaiscript::Boxed_Value&, const chaiscript::Dynamic_Cast_Conversions*) [with Type = const std::function<unsigned int(long unsigned int)>&, typename chaiscript::detail::Cast_Helper<T>::Result_Type = std::function<unsigned int(long unsigned int)>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/proxy_functions_detail.hpp:77:13:   instantiated from ‘static void chaiscript::dispatch::detail::Try_Cast<Param, Rest ...>::do_try(const std::vector<chaiscript::Boxed_Value>&, int, const chaiscript::Dynamic_Cast_Conversions&) [with Param = const std::function<unsigned int(long unsigned int)>&, Rest = {}]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/proxy_functions_detail.hpp:102:13:   instantiated from ‘bool chaiscript::dispatch::detail::compare_types_cast(Ret (*)(Params ...), const std::vector<chaiscript::Boxed_Value>&, const chaiscript::Dynamic_Cast_Conversions&) [with Ret = void, Params = {const std::function<unsigned int(long unsigned int)>&}]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/proxy_functions.hpp:495:78:   instantiated from ‘bool chaiscript::dispatch::Proxy_Function_Impl<Func>::compare_types_with_cast(const std::vector<chaiscript::Boxed_Value>&, const chaiscript::Dynamic_Cast_Conversions&) const [with Func = void(const std::function<unsigned int(long unsigned int)>&)]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/unittests/arithmetic_conversions_test.cpp:70:1:   instantiated from here\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:75:21: error: looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::reference_wrapper<long unsigned int>]’\n/home/jason/10914850/builds/CS-f547b4bb10-x86_64-G4.6/include/chaiscript/dispatchkit/any.hpp:54:19: error:   overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’\nmake[2]: *** [CMakeFiles/arithmetic_conversions_test.dir/unittests/arithmetic_conversions_test.cpp.o] Error 1\nmake[1]: *** [CMakeFiles/arithmetic_conversions_test.dir/all] Error 2\nmake: *** [all] Error 2"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "54",
+      "colnumber": "19",
+      "messagetype": "error",
+      "message": "  overriding ‘virtual chaiscript::detail::Any::Data::~Data() noexcept (true)’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "54",
+      "colnumber": "29",
+      "messagetype": "error",
+      "message": "‘virtual chaiscript::detail::Any::Data::~Data()’ declared virtual cannot be defaulted in the class body"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<long int>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::reference_wrapper<long unsigned int>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::reference_wrapper<chaiscript::ChaiScript>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const unsigned int>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const long unsigned int>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const long int>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const long double>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<int>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const float>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<unsigned int>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<chaiscript::dispatch::Dynamic_Object>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<chaiscript::dispatch::Placeholder_Object>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<bool>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::reference_wrapper<const std::exception>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<chaiscript::exception::eval_error>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<double>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<float>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<long double>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<char>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const std::map<std::basic_string<char>, chaiscript::Boxed_Value> >]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const std::vector<chaiscript::Boxed_Value> >]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<signed char>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<short int>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<unsigned char>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<short unsigned int>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const int>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const chaiscript::Type_Info>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const chaiscript::dispatch::Proxy_Function_Base>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const bool>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const double>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const std::basic_string<char> >]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<const char>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "21",
+      "messagetype": "error",
+      "message": "looser throw specifier for ‘chaiscript::detail::Any::Data_Impl<T>::~Data_Impl() [with T = std::shared_ptr<long unsigned int>]’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/any.hpp",
+      "linenumber": "75",
+      "colnumber": "36",
+      "messagetype": "error",
+      "message": "‘virtual chaiscript::detail::Any::Data_Impl<T>::~Data_Impl()’ declared virtual cannot be defaulted in the class body"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/dispatchkit.hpp",
+      "linenumber": "275",
+      "colnumber": "40",
+      "messagetype": "error",
+      "message": "‘virtual chaiscript::detail::Dispatch_Function::~Dispatch_Function()’ declared virtual cannot be defaulted in the class body"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/dispatchkit.hpp",
+      "linenumber": "467",
+      "colnumber": "26",
+      "messagetype": "error",
+      "message": "‘class std::map<std::basic_string<char>, chaiscript::Boxed_Value>’ has no member named ‘emplace’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/dispatchkit.hpp",
+      "linenumber": "486",
+      "colnumber": "38",
+      "messagetype": "error",
+      "message": "‘class std::map<std::basic_string<char>, chaiscript::Boxed_Value>’ has no member named ‘emplace’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/dispatchkit.hpp",
+      "linenumber": "502",
+      "colnumber": "38",
+      "messagetype": "error",
+      "message": "‘class std::map<std::basic_string<char>, chaiscript::Boxed_Value>’ has no member named ‘emplace’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/dispatchkit.hpp",
+      "linenumber": "583",
+      "colnumber": "27",
+      "messagetype": "error",
+      "message": "‘chaiscript::detail::Dispatch_Engine::Type_Name_Map’ has no member named ‘emplace’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/dispatchkit.hpp",
+      "linenumber": "748",
+      "colnumber": "18",
+      "messagetype": "error",
+      "message": "‘class std::map<std::basic_string<char>, chaiscript::Boxed_Value>’ has no member named ‘emplace’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/dispatchkit.hpp",
+      "linenumber": "1125",
+      "colnumber": "19",
+      "messagetype": "error",
+      "message": "‘class std::map<std::basic_string<char>, std::vector<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> > >’ has no member named ‘emplace’"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/dispatchkit.hpp",
+      "linenumber": "1128",
+      "colnumber": "19",
+      "messagetype": "error",
+      "message": "‘class std::map<std::basic_string<char>, std::vector<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> > >’ has no member named ‘emplace’"
+    }
+  ],
+  "test_results": [
+    {
+      "name": "version_check",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/assign_const.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/bind.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/bind2.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/block_start.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/bool_not.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/break_while.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/char_init.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/classification.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/collate.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/compare_gt.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/compare_lt.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/concat.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/const_range_test.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/convert_double_string.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/convert_int_string.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/convert_string_double.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/convert_string_int.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/deep_array_lookup.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/dispatch_functions.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/drop.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/drop_while.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/empty.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/equ_shortform.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/eval.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/eval_error.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/even.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/exception.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/exception_finally.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/exception_guards.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/filter.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/float.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/foldl.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/for.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/for_each.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/for_each_range.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/for_each_retro.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/function_array_adjacent.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/function_introspection.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/function_reassignment.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/generate_range.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/global_const_in_module.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/if.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/if_else.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/if_elseif.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/if_elseif_else.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/index_operator.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/inheritance.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/instring_eval.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/instring_eval_more.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/invalid_function_assignment.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/invalid_function_reassignment.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/is_undef.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/join.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/lambda.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/list_push_back.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/list_push_front.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/load_module.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/loop_inner_outer.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/malformed_inline_map.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/map.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/map_access.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/map_inplace_init.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_add.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_add_mixed.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_dec.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_div.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_inc.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_mod.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_mult.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_negate.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_paren.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/math_sub.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/max.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/memberscope.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/method_sugar.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/min.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/mmd1.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/mmd2.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/multiline.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/number_formats.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/object_attr.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/object_attr_same_name.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/object_clone.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/object_constructor_guards.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/object_method_guards.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/odd.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/operator_overload.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/operator_overload2.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/operators_float.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/operators_int.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/pair.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/pointer_passed_to_constructor.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/precedence_1.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/precedence_2.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/precedence_3.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/precedence_eq.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/product.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/range.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/range_back.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/range_contains.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/range_find.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/range_inplace.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/reduce.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/ref_equal.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/reflection_test.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/retro.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/retroretro.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/return.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/runtime_error.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/shift.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_charptr.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_concat.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_find.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_find_first_not_of.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_find_first_of.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_find_last_not_of.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_find_last_of.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_init.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_literal_access.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/string_rfind.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/sum.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/switch_break.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/switch_default.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/switch_empty.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/switch_fallthru.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/switch_fallthru_and_break.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/take.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/take_while.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/type_info.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/use.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_access.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_erase_at.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_inplace_init.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_insert_at.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_literal_acccess.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_of_one.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_paren_literal_access.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_push_back.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/vector_push_empty.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/zip.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "3.x/zip_with.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "assign_const.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "bind.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "bind2.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "block_start.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "bool_not.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "break_for.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "break_while.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "char_init.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "class.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "classification.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "collate.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "compare_gt.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "compare_lt.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "concat.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "const_range_test.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "continue_for.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "continue_while.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "convert_double_string.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "convert_int_string.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "convert_string_double.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "convert_string_int.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "deep_array_lookup.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "dispatch_functions.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "drop.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "drop_while.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "empty.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "equ_shortform.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "eval.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "eval_error.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "even.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "exception.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "exception_finally.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "exception_guards.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "filter.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "float.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "foldl.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "for.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "for_each.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "for_each_range.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "for_each_retro.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "function_array_adjacent.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "function_introspection.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "function_reassignment.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "function_redefinition.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "generate_range.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "global_const_in_module.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "global_in_script.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "hashbang.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "if.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "if_else.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "if_elseif.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "if_elseif_else.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "index_operator.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "inheritance.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "instring_eval.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "instring_eval_more.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "invalid_function_assignment.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "invalid_function_reassignment.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "is_undef.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "join.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "lambda.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "list_push_back.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "list_push_front.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "load_module.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "loop_inner_outer.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "malformed_inline_map.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "map.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "map_access.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "map_count.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "map_inplace_init.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_add.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_add_mixed.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_dec.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_div.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_inc.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_mod.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_mult.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_negate.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_paren.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "math_sub.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "max.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "member_variable_access.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "memberscope.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "method_sugar.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "min.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "mmd1.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "mmd2.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "multiline.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "multiline_oper.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "null_object_access.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "number_formats.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "number_suffixes.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "object_attr.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "object_attr_same_name.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "object_clone.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "object_constructor_guards.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "object_method_guards.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "odd.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "operator_overload.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "operator_overload2.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "operator_scoping.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "operators_float.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "operators_int.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "pair.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "pass_by_reference.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "pointer_passed_to_constructor.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "precedence_1.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "precedence_2.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "precedence_3.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "precedence_eq.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "product.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "range.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "range_back.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "range_contains.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "range_find.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "range_inplace.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "reduce.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "reflection_test.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "retro.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "retroretro.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "return.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "runtime_error.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "scoping.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "shift.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_charptr.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_concat.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_find.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_find_first_not_of.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_find_first_of.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_find_last_not_of.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_find_last_of.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_init.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_literal_access.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_rfind.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_size.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "string_substr.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "sum.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "switch_break.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "switch_default.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "switch_empty.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "switch_fallthru.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "switch_fallthru_and_break.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "system_introspection.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "take.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "take_while.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "temporary_lifetime.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "ternary_condition.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "type_info.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "use.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "var_decl.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "var_ref_decl.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "variable_redefinition.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_access.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_erase_at.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_inplace_init.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_insert_at.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_literal_acccess.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_of_one.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_of_suffixed_numbers.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_paren_literal_access.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_push_back.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "vector_push_empty.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "zip.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "zip_with.chai",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Utility_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Dynamic_Object_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Functor_Creation_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Functor_Cast_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Boxed_Cast_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Object_Lifetime_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Function_Ordering_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Type_Info_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Type_Name_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Eval_Catch_Exception_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Short_Comparison_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "cpp_lambda_test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Expected_Eval_Errors_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Set_State_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Simultaneous_ChaiScript_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Heap_Allocated_ChaiScript_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "C_Linkage_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Integer_Literal_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Arithmetic_Conversions_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "Multithreaded_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    },
+    {
+      "name": "MultiFile_Test",
+      "status": "notrun",
+      "time": 0,
+      "output": "",
+      "parsed_errors": [
+
+      ]
+    }
+  ],
+  "failure": null,
+  "package_results": [
+
+  ]
+}
+
