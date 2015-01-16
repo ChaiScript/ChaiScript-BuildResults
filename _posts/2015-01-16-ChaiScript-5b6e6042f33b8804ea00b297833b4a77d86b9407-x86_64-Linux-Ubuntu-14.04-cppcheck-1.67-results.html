@@ -3,10 +3,10 @@ title: ChaiScript-5b6e6042f33b8804ea00b297833b4a77d86b9407-x86_64-Linux-Ubuntu-1
 permalink: ChaiScript-5b6e6042f33b8804ea00b297833b4a77d86b9407-x86_64-Linux-Ubuntu-14.04-cppcheck-1.67.html
 tags: data
 layout: ci_results
-date: 2015-01-16 18:01:05
+date: 2015-01-16 18:02:12
 unhandled_failure: false
 build_error_count: 0
-build_warning_count: 0
+build_warning_count: 8
 package_error_count: 0
 package_warning_count: 0
 test_count: 0
@@ -29,9 +29,9 @@ pull_request_issue_id: ""
 pull_request_base_repository: 
 pull_request_base_ref: 
 device_id: x86_64-Linux-Ubuntu-14.04-cppcheck-1.67
-pending: true
+pending: false
 analyze_only: true
-build_time: 
+build_time: 59.17710349
 test_time: 
 package_time: 
 install_time: 
@@ -50,7 +50,62 @@ coverage_url:
 
 {
   "build_results": [
-
+    {
+      "filename": "cmake/c++11-test-nullptr-N2431_fail_compile.cpp",
+      "linenumber": "3",
+      "colnumber": 0,
+      "messagetype": "style",
+      "message": "Variable 'i' is assigned a value that is never used."
+    },
+    {
+      "filename": "cmake/c++11-test-sizeof_member-N2253.cpp",
+      "linenumber": "2",
+      "colnumber": 0,
+      "messagetype": "style",
+      "message": "struct or union member 'foo::bar' is never used."
+    },
+    {
+      "filename": "cmake/c++11-test-sizeof_member-N2253.cpp",
+      "linenumber": "3",
+      "colnumber": 0,
+      "messagetype": "style",
+      "message": "struct or union member 'foo::baz' is never used."
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/boxed_number.hpp",
+      "linenumber": "557",
+      "colnumber": 0,
+      "messagetype": "style:'Boxed_Number:",
+      "message": "operator=' should return 'Boxed_Number &'."
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/proxy_functions.hpp",
+      "linenumber": "179",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "The class 'Dynamic_Proxy_Function' defines member variable with name 'm_arity' also defined in its parent class 'Proxy_Function_Base'."
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/type_conversions.hpp",
+      "linenumber": "222",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'Type_Conversions::m_mutex' is not initialized in the constructor."
+    },
+    {
+      "filename": "unittests/multithreaded_test.cpp",
+      "linenumber": "1",
+      "colnumber": 0,
+      "messagetype": "information",
+      "message": "Skipping configuration 'max' since the value of 'max' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly."
+    },
+    {
+      "filename": "unittests/object_lifetime_test2.cpp",
+      "linenumber": "23",
+      "colnumber": 0,
+      "messagetype": "style:'Vector2<float>:",
+      "message": "operator=' should return 'Vector2<float> &'."
+    }
   ],
   "test_results": [
 
