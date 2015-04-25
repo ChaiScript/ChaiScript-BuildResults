@@ -3,10 +3,10 @@ title: ChaiScript-dde7d27b96a8a1945db991d8afe1e71cb936596d-x86_64-Linux-Ubuntu-1
 permalink: ChaiScript-dde7d27b96a8a1945db991d8afe1e71cb936596d-x86_64-Linux-Ubuntu-14.04-cppcheck-1.67.html
 tags: data
 layout: ci_results
-date: 2015-04-25 04:29:02
+date: 2015-04-25 04:30:19
 unhandled_failure: false
 build_error_count: 0
-build_warning_count: 0
+build_warning_count: 16
 package_error_count: 0
 package_warning_count: 0
 test_count: 0
@@ -29,9 +29,9 @@ pull_request_issue_id: ""
 pull_request_base_repository: 
 pull_request_base_ref: 
 device_id: x86_64-Linux-Ubuntu-14.04-cppcheck-1.67
-pending: true
+pending: false
 analyze_only: true
-build_time: 
+build_time: 71.338123916
 test_time: 
 package_time: 
 install_time: 
@@ -51,7 +51,118 @@ asset_url:
 
 {
   "build_results": [
-
+    {
+      "filename": "src/test_module.cpp",
+      "linenumber": "11",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'TestBaseType::mdarray' is not initialized in the constructor."
+    },
+    {
+      "filename": "src/test_module.cpp",
+      "linenumber": "12",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'TestBaseType::mdarray' is not initialized in the constructor."
+    },
+    {
+      "filename": "src/test_module.cpp",
+      "linenumber": "13",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'TestBaseType::mdarray' is not initialized in the constructor."
+    },
+    {
+      "filename": "unittests/catch.hpp",
+      "linenumber": "299",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'NotImplementedException::m_lineInfo' is not initialized in the constructor."
+    },
+    {
+      "filename": "unittests/catch.hpp",
+      "linenumber": "2453",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'Option::storage' is not initialized in the constructor."
+    },
+    {
+      "filename": "unittests/catch.hpp",
+      "linenumber": "2454",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'Option::storage' is not initialized in the constructor."
+    },
+    {
+      "filename": "unittests/catch.hpp",
+      "linenumber": "2457",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'Option::storage' is not initialized in the constructor."
+    },
+    {
+      "filename": "unittests/catch.hpp",
+      "linenumber": "2956",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'TestSpecParser::m_start' is not initialized in the constructor."
+    },
+    {
+      "filename": "unittests/catch.hpp",
+      "linenumber": "2956",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'TestSpecParser::m_pos' is not initialized in the constructor."
+    },
+    {
+      "filename": "unittests/catch.hpp",
+      "linenumber": "2956",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'TestSpecParser::m_mode' is not initialized in the constructor."
+    },
+    {
+      "filename": "unittests/catch.hpp",
+      "linenumber": "2956",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'TestSpecParser::m_exclusion' is not initialized in the constructor."
+    },
+    {
+      "filename": "unittests/catch.hpp",
+      "linenumber": "3533",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "'operator=' should check for assignment to self to avoid problems with dynamic memory."
+    },
+    {
+      "filename": "unittests/catch.hpp",
+      "linenumber": "3669",
+      "colnumber": 0,
+      "messagetype": "portability",
+      "message": "The extra qualification 'Parser::' is unnecessary and is considered an error by many compilers."
+    },
+    {
+      "filename": "unittests/catch.hpp",
+      "linenumber": "3672",
+      "colnumber": 0,
+      "messagetype": "portability",
+      "message": "The extra qualification 'Parser::' is unnecessary and is considered an error by many compilers."
+    },
+    {
+      "filename": "unittests/catch.hpp",
+      "linenumber": "6044",
+      "colnumber": 0,
+      "messagetype": "performance",
+      "message": "Variable 'm_what' is assigned in constructor body. Consider performing initialization in initialization list."
+    },
+    {
+      "filename": "unittests/catch.hpp",
+      "linenumber": "8248",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'JunitReporter::unexpectedExceptions' is not initialized in the constructor."
+    }
   ],
   "test_results": [
 
