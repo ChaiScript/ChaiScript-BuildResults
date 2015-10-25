@@ -1,0 +1,3421 @@
+---
+title: ChaiScript-da1511a0925398e2e328d1426fcdef6bc8135af7-x86_64-Linux-Ubuntu-14.04-gcc-4.6
+permalink: ChaiScript-da1511a0925398e2e328d1426fcdef6bc8135af7-x86_64-Linux-Ubuntu-14.04-gcc-4.6.html
+tags: data
+layout: ci_results
+date: '2015-10-25 00:24:48'
+unhandled_failure: false
+build_error_count: 0
+build_warning_count: 0
+package_error_count: 0
+package_warning_count: 0
+test_count: 0
+test_passed_count: 0
+repository: ChaiScript/ChaiScript
+compiler: gcc
+compiler_version: '4.6'
+architecture: 
+os: Linux
+os_release: Ubuntu-14.04
+is_release: false
+release_packaged: false
+packaging_skipped: true
+package_name: 
+tag_name: 
+commit_sha: da1511a0925398e2e328d1426fcdef6bc8135af7
+branch_name: add_performance_tests
+test_run: false
+pull_request_issue_id: ''
+pull_request_base_repository: ''
+pull_request_base_ref: ''
+device_id: x86_64-Linux-Ubuntu-14.04-gcc-4.6
+pending: true
+analyze_only: false
+build_time: 
+test_time: 
+package_time: 
+install_time: 
+results_repository: ChaiScript/ChaiScript-BuildResults
+machine_name: !binary |-
+  amFzb24tVmlydHVhbEJveA==
+machine_ip: !binary |-
+  MTAuMC4yLjE1
+test_pass_limit: 99.9999
+test_warn_limit: 90.0
+coverage_enabled: false
+coverage_pass_limit: 90
+coverage_warn_limit: 75
+coverage_lines: 0
+coverage_total_lines: 0
+coverage_functions: 0
+coverage_total_functions: 0
+coverage_url: 
+asset_url: 
+performance_total_time: 21113786347
+
+---
+{
+  "build_results": [
+
+  ],
+  "test_results": [
+
+  ],
+  "failure": null,
+  "package_results": [
+
+  ],
+  "configuration": {
+    "title": "ChaiScript-da1511a0925398e2e328d1426fcdef6bc8135af7-x86_64-Linux-Ubuntu-14.04-gcc-4.6",
+    "permalink": "ChaiScript-da1511a0925398e2e328d1426fcdef6bc8135af7-x86_64-Linux-Ubuntu-14.04-gcc-4.6.html",
+    "tags": "data",
+    "layout": "ci_results",
+    "date": "2015-10-25 00:24:48",
+    "unhandled_failure": false,
+    "build_error_count": 0,
+    "build_warning_count": 0,
+    "package_error_count": 0,
+    "package_warning_count": 0,
+    "test_count": 0,
+    "test_passed_count": 0,
+    "repository": "ChaiScript/ChaiScript",
+    "compiler": "gcc",
+    "compiler_version": "4.6",
+    "architecture": null,
+    "os": "Linux",
+    "os_release": "Ubuntu-14.04",
+    "is_release": false,
+    "release_packaged": false,
+    "packaging_skipped": true,
+    "package_name": null,
+    "tag_name": null,
+    "commit_sha": "da1511a0925398e2e328d1426fcdef6bc8135af7",
+    "branch_name": "add_performance_tests",
+    "test_run": false,
+    "pull_request_issue_id": "",
+    "pull_request_base_repository": "",
+    "pull_request_base_ref": "",
+    "device_id": "x86_64-Linux-Ubuntu-14.04-gcc-4.6",
+    "pending": true,
+    "analyze_only": false,
+    "build_time": null,
+    "test_time": null,
+    "package_time": null,
+    "install_time": null,
+    "results_repository": "ChaiScript/ChaiScript-BuildResults",
+    "machine_name": "jason-VirtualBox",
+    "machine_ip": "10.0.2.15",
+    "test_pass_limit": 99.9999,
+    "test_warn_limit": 90.0,
+    "coverage_enabled": false,
+    "coverage_pass_limit": 90,
+    "coverage_warn_limit": 75,
+    "coverage_lines": 0,
+    "coverage_total_lines": 0,
+    "coverage_functions": 0,
+    "coverage_total_functions": 0,
+    "coverage_url": null,
+    "asset_url": null,
+    "performance_total_time": 21113786347
+  },
+  "performance_results": {
+    "object_files": [
+      {
+        "name": "chai",
+        "size": 1263111
+      },
+      {
+        "name": "libchaiscript_stdlib-5.7.2.so",
+        "size": 3502613
+      },
+      {
+        "name": "libtest_module.so",
+        "size": 693379
+      }
+    ],
+    "test_files": [
+      {
+        "version": "1",
+        "creator": "callgrind-3.10.0.SVN",
+        "pid": "23546",
+        "cmd": " /home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai /home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/performance_tests/is_prime.chai",
+        "part": "1",
+        "desc": "Trigger: Program termination",
+        "positions": "line",
+        "events": "Ir",
+        "summary": "5077271890",
+        "totals": 5077271890,
+        "data": [
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::AST_Node::eval(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 18880540,
+            "cost": 68109695467
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Block_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 1583867,
+            "cost": 13709646880
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Fun_Call_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 10002,
+            "cost": 10080974064
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::operator()(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const'2",
+            "count": 30009,
+            "cost": 5084810414
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "0x0000000000453ef6",
+            "count": 1,
+            "cost": 5075221487
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/csu/libc-start.c",
+            "function_name": "(below main)",
+            "count": 1,
+            "cost": 5075220047
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "main",
+            "count": 1,
+            "cost": 5075089629
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Dynamic_Proxy_Function_Impl<chaiscript::eval::Def_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const::{lambda(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&)#2}>::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const'2",
+            "count": 10000,
+            "cost": 5064193730
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::detail::eval_function(chaiscript::detail::Dispatch_Engine&, std::shared_ptr<chaiscript::AST_Node> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, std::map<std::string, chaiscript::Boxed_Value, std::less<std::string>, std::allocator<std::pair<std::string const, chaiscript::Boxed_Value> > > const*) [clone .constprop.1507]'2",
+            "count": 10000,
+            "cost": 5062763658
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::do_eval(std::string const&, std::string const&, bool)",
+            "count": 6,
+            "cost": 5058812389
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::AST_Node::eval(chaiscript::detail::Dispatch_State const&) const",
+            "count": 6,
+            "cost": 5038368866
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::File_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 6,
+            "cost": 5038368794
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::eval_file(std::string const&, std::shared_ptr<chaiscript::detail::Exception_Handler_Base> const&)",
+            "count": 1,
+            "cost": 5037540050
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Fun_Call_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 2,
+            "cost": 5036705433
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::operator()(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 6,
+            "cost": 5036701732
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Dynamic_Proxy_Function_Impl<chaiscript::eval::Def_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const::{lambda(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&)#2}>::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 3,
+            "cost": 5036698104
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::detail::eval_function(chaiscript::detail::Dispatch_Engine&, std::shared_ptr<chaiscript::AST_Node> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, std::map<std::string, chaiscript::Boxed_Value, std::less<std::string>, std::allocator<std::pair<std::string const, chaiscript::Boxed_Value> > > const*) [clone .constprop.1507]",
+            "count": 3,
+            "cost": 5036697711
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Dot_Access_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 3,
+            "cost": 5036697337
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Block_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 3,
+            "cost": 5036692109
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Binary_Operator_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 1,
+            "cost": 5036685060
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::For_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 1,
+            "cost": 5036652143
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::If_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 4999,
+            "cost": 5030627413
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::For_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 4999,
+            "cost": 4961177138
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Binary_Operator_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 4697276,
+            "cost": 4418991321
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::If_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 1563869,
+            "cost": 3061584851
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Binary_Operator_AST_Node::do_oper(chaiscript::detail::Dispatch_State const&, chaiscript::Operators::Opers, std::string const&, chaiscript::Boxed_Value const&, chaiscript::Boxed_Value const&) const",
+            "count": 4697277,
+            "cost": 1464805367
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Number::oper(chaiscript::Operators::Opers, chaiscript::Boxed_Value const&, chaiscript::Boxed_Value const&)",
+            "count": 4697276,
+            "cost": 1300397144
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::Boxed_Number::oper_rhs<int>(chaiscript::Operators::Opers, chaiscript::Boxed_Value const&, chaiscript::Boxed_Value const&)",
+            "count": 4697276,
+            "cost": 1093717000
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()",
+            "count": 17425661,
+            "cost": 1037669072
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Id_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 7862030,
+            "cost": 726925160
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "operator new(unsigned long)",
+            "count": 6438221,
+            "cost": 705376931
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::Boxed_Number::const_binary_int_go<int>(chaiscript::Operators::Opers, int const&, int const&)",
+            "count": 1563869,
+            "cost": 674027539
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::detail::const_var_impl<int>(int const&)",
+            "count": 1563887,
+            "cost": 631813266
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "malloc",
+            "count": 6442715,
+            "cost": 628909250
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "operator delete(void*)",
+            "count": 6438221,
+            "cost": 573678510
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "free",
+            "count": 6442719,
+            "cost": 561370478
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "_int_free",
+            "count": 6442720,
+            "cost": 464730038
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+            "count": 3139895,
+            "cost": 413329063
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libpthread-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/nptl/pthread_mutex_unlock.c",
+            "function_name": "_int_malloc",
+            "count": 6442714,
+            "cost": 364698492
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Any::Data_Impl<std::shared_ptr<int const> >::~Data_Impl()",
+            "count": 1563887,
+            "cost": 358130123
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Prefix_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 1565207,
+            "cost": 345910896
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+            "source_file": "???",
+            "function_name": "0x000000000000ea60",
+            "count": 160219,
+            "cost": 289020230
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+            "count": 3139895,
+            "cost": 282633042
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+            "source_file": "???",
+            "function_name": "_Unwind_Resume",
+            "count": 17321,
+            "cost": 232253088
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Return_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 4330,
+            "cost": 230457352
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value::Object_Data::get()",
+            "count": 1570524,
+            "cost": 229387828
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "__cxa_throw",
+            "count": 4331,
+            "cost": 229317812
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+            "source_file": "???",
+            "function_name": "0x000000000000fed0",
+            "count": 21652,
+            "cost": 229254041
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+            "source_file": "???",
+            "function_name": "_Unwind_RaiseException",
+            "count": 4331,
+            "cost": 228914341
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::Operator(unsigned long)'2",
+            "count": 16795,
+            "cost": 209608015
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Number::get_common_type(chaiscript::Boxed_Value const&)",
+            "count": 10964763,
+            "cost": 175436208
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_add_ref_copy()",
+            "count": 9522254,
+            "cost": 57133524
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::__detail::_Map_base<void*, std::pair<void* const, chaiscript::detail::Stack_Holder>, std::allocator<std::pair<void* const, chaiscript::detail::Stack_Holder> >, std::__detail::_Select1st, std::equal_to<void*>, std::hash<void*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](void* const&)",
+            "count": 7892080,
+            "cost": 197304658
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)",
+            "count": 3139895,
+            "cost": 18839370
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "void const* chaiscript::detail::throw_if_null<void const>(void const*)",
+            "count": 3138410,
+            "cost": 12553640
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::AST_Node::get_bool_condition(chaiscript::Boxed_Value const&)",
+            "count": 3138406,
+            "cost": 122397834
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Cast_Helper<bool>::Result_Type chaiscript::boxed_cast<bool>(chaiscript::Boxed_Value const&, chaiscript::Type_Conversions const*) [clone .constprop.1537]",
+            "count": 3138406,
+            "cost": 84736962
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::const_var(bool)",
+            "count": 3133422,
+            "cost": 84603636
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::Boxed_Number::boolean_go<int>(chaiscript::Operators::Opers, int const&, int const&)",
+            "count": 3133407,
+            "cost": 134736501
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >::~vector()",
+            "count": 1633903,
+            "cost": 37340618
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "void std::vector<std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >, std::allocator<std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > > >::emplace_back<>()",
+            "count": 1588871,
+            "cost": 17479121
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "void std::vector<std::vector<std::pair<std::string, chaiscript::Boxed_Value>, std::allocator<std::pair<std::string, chaiscript::Boxed_Value> > >, std::allocator<std::vector<std::pair<std::string, chaiscript::Boxed_Value>, std::allocator<std::pair<std::string, chaiscript::Boxed_Value> > > > >::emplace_back<>()",
+            "count": 1588870,
+            "cost": 25029994
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::pop_scope(chaiscript::detail::Stack_Holder&)",
+            "count": 1588870,
+            "cost": 100804262
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()'2",
+            "count": 1582439,
+            "cost": 204895666
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Int_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 1568871,
+            "cost": 20395323
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Number::oper(chaiscript::Operators::Opers, chaiscript::Boxed_Value const&)",
+            "count": 1565207,
+            "cost": 95477627
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<int const, std::allocator<int>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+            "count": 1563887,
+            "cost": 1563887
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<int const, std::allocator<int>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+            "count": 1563887,
+            "cost": 147005378
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<int const, std::allocator<int>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)",
+            "count": 1563887,
+            "cost": 9383322
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "void chaiscript::Boxed_Number::check_divide_by_zero<int>(int, std::enable_if<std::is_integral<int>::value, void>::type*) [clone .isra.307]",
+            "count": 1563869,
+            "cost": 4691607
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "0x000000000008cc90",
+            "count": 983016,
+            "cost": 12385178
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "0x000000000008cab0",
+            "count": 931053,
+            "cost": 35718281
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+            "source_file": "???",
+            "function_name": "0x0000000000010920",
+            "count": 610562,
+            "cost": 17095736
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/strlen.S",
+            "function_name": "strlen",
+            "count": 525006,
+            "cost": 8449584
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/multiarch/../strcmp.S",
+            "function_name": "__strcmp_ssse3",
+            "count": 418585,
+            "cost": 11534191
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+            "source_file": "???",
+            "function_name": "0x000000000000e160",
+            "count": 320438,
+            "cost": 115653985
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+            "source_file": "???",
+            "function_name": "0x00000000000108c0",
+            "count": 320438,
+            "cost": 4165694
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+            "source_file": "???",
+            "function_name": "0x000000000000dbe0",
+            "count": 259810,
+            "cost": 7274680
+          }
+        ],
+        "test_name": "performance.is_prime.chai"
+      },
+      {
+        "version": "1",
+        "creator": "callgrind-3.10.0.SVN",
+        "pid": "23548",
+        "cmd": " /home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai /home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/performance_tests/profile_cpp_calls.chai",
+        "part": "1",
+        "desc": "Trigger: Program termination",
+        "positions": "line",
+        "events": "Ir",
+        "summary": "9821292551",
+        "totals": 9821292551,
+        "data": [
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::AST_Node::eval(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 12200094,
+            "cost": 29746167042
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "0x0000000000453ef6",
+            "count": 1,
+            "cost": 9819242157
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/csu/libc-start.c",
+            "function_name": "(below main)",
+            "count": 1,
+            "cost": 9819240717
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "main",
+            "count": 1,
+            "cost": 9819110527
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::do_eval(std::string const&, std::string const&, bool)",
+            "count": 6,
+            "cost": 9802842119
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::AST_Node::eval(chaiscript::detail::Dispatch_State const&) const",
+            "count": 6,
+            "cost": 9781856580
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::File_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 6,
+            "cost": 9781856508
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::eval_file(std::string const&, std::shared_ptr<chaiscript::detail::Exception_Handler_Base> const&)",
+            "count": 1,
+            "cost": 9781569825
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::For_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 1,
+            "cost": 9780239423
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Block_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 200002,
+            "cost": 9584041549
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Fun_Call_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 1600002,
+            "cost": 4148016823
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Dot_Access_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 1600002,
+            "cost": 4051829569
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::dispatch::dispatch<std::vector<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>, std::allocator<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> > > >(std::vector<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>, std::allocator<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> > > const&, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&)",
+            "count": 3200004,
+            "cost": 3570837117
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::operator()(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 3400004,
+            "cost": 2389828947
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::call_member(std::string const&, std::__atomic_base<unsigned long>&, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, bool)",
+            "count": 1600002,
+            "cost": 2042418504
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "operator new(unsigned long)",
+            "count": 13222958,
+            "cost": 1487680122
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Function::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 1400002,
+            "cost": 1442602906
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "malloc",
+            "count": 13223121,
+            "cost": 1329093817
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Id_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 5400007,
+            "cost": 1190013156
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "operator delete(void*)",
+            "count": 13222958,
+            "cost": 1186403245
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "free",
+            "count": 13223126,
+            "cost": 1159971499
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()",
+            "count": 26402713,
+            "cost": 1009027584
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Callable_Impl<void (std::string&, int), chaiscript::dispatch::detail::Fun_Caller<void, std::string&, int> >::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 2400000,
+            "cost": 986401313
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "_int_free",
+            "count": 13223127,
+            "cost": 961624954
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/ld-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/libio/genops.c",
+            "function_name": "_int_malloc",
+            "count": 13223121,
+            "cost": 786886692
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Equation_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 200002,
+            "cost": 686643742
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >::~vector()",
+            "count": 7000022,
+            "cost": 634001924
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::operator()(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const'2",
+            "count": 1400006,
+            "cost": 597809399
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::new_function_call(chaiscript::detail::Stack_Holder&) [clone .isra.1047]",
+            "count": 3400006,
+            "cost": 554201764
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::vector<std::pair<unsigned long, chaiscript::dispatch::Proxy_Function_Base const*>, std::allocator<std::pair<unsigned long, chaiscript::dispatch::Proxy_Function_Base const*> > >::reserve(unsigned long)",
+            "count": 3200008,
+            "cost": 550601308
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::call_function(std::string const&, std::__atomic_base<unsigned long>&, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&) const",
+            "count": 200004,
+            "cost": 526838307
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Rb_tree<std::string, std::pair<std::string const, chaiscript::Boxed_Value>, std::_Select1st<std::pair<std::string const, chaiscript::Boxed_Value> >, std::less<std::string>, std::allocator<std::pair<std::string const, chaiscript::Boxed_Value> > >::find(std::string const&) const",
+            "count": 1600021,
+            "cost": 496001104
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "void std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >::_M_range_insert<__gnu_cxx::__normal_iterator<chaiscript::Boxed_Value const*, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > > >(__gnu_cxx::__normal_iterator<chaiscript::Boxed_Value*, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > >, __gnu_cxx::__normal_iterator<chaiscript::Boxed_Value const*, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > >, __gnu_cxx::__normal_iterator<chaiscript::Boxed_Value const*, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > >, std::forward_iterator_tag)",
+            "count": 3200004,
+            "cost": 457801329
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::filter(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 3200024,
+            "cost": 424203829
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "void std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >::_M_emplace_back_aux<chaiscript::Boxed_Value>(chaiscript::Boxed_Value&&)",
+            "count": 1200002,
+            "cost": 361200602
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value::Object_Data::get(chaiscript::Boxed_Value::Void_Type, bool) [clone .constprop.2132]",
+            "count": 2400000,
+            "cost": 360000000
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::pop_function_call(chaiscript::detail::Stack_Holder&)",
+            "count": 3200004,
+            "cost": 337600012
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/multiarch/memcmp-sse4.S",
+            "function_name": "__memcmp_sse4_1",
+            "count": 14417344,
+            "cost": 324745511
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::compare_type_to_param(chaiscript::Type_Info const&, chaiscript::Boxed_Value const&, chaiscript::Type_Conversions const&)",
+            "count": 5800032,
+            "cost": 319003085
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+            "count": 3401503,
+            "cost": 306140502
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::threading::Thread_Storage<chaiscript::Type_Conversions::Conversion_Saves>::operator->()",
+            "count": 10200010,
+            "cost": 306001238
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "void chaiscript::bootstrap::standard_library::detail::erase_at<std::string>(std::string&, int)",
+            "count": 2400000,
+            "cost": 297601313
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >::reserve(unsigned long)",
+            "count": 1600003,
+            "cost": 265600498
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::__detail::_Map_base<void*, std::pair<void* const, chaiscript::detail::Stack_Holder>, std::allocator<std::pair<void* const, chaiscript::detail::Stack_Holder> >, std::__detail::_Select1st, std::equal_to<void*>, std::hash<void*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](void* const&)",
+            "count": 10400052,
+            "cost": 260003958
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::get_function(std::string const&, unsigned long) const",
+            "count": 1600002,
+            "cost": 232408505
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >::vector(std::initializer_list<chaiscript::Boxed_Value>, std::allocator<chaiscript::Boxed_Value> const&) [clone .constprop.1526]",
+            "count": 1600004,
+            "cost": 225600638
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::Operator(unsigned long)'2",
+            "count": 17248,
+            "cost": 215069431
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "std::string::_M_mutate(unsigned long, unsigned long, unsigned long)",
+            "count": 2600004,
+            "cost": 210802715
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+            "count": 3401503,
+            "cost": 204897314
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Callable_Impl<unsigned long (std::string const*), std::shared_ptr<chaiscript::Module> chaiscript::bootstrap::standard_library::string_type<std::string>(std::string const&, std::shared_ptr<chaiscript::Module>)::{lambda(std::string const*)#10}>::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<std::vector> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 400000,
+            "cost": 197200000
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_add_ref_copy()",
+            "count": 14605034,
+            "cost": 87630204
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/multiarch/../strcmp.S",
+            "function_name": "__strcmp_ssse3",
+            "count": 6409989,
+            "cost": 161226376
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "void const* chaiscript::detail::throw_if_null<void const>(void const*)",
+            "count": 3600002,
+            "cost": 14400008
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)",
+            "count": 3401503,
+            "cost": 20409018
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libpthread-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/nptl/pthread_mutex_unlock.c",
+            "function_name": "pthread_mutex_unlock",
+            "count": 3401047,
+            "cost": 54416939
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libpthread-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/nptl/../nptl/pthread_mutex_lock.c",
+            "function_name": "pthread_mutex_lock",
+            "count": 3401044,
+            "cost": 91828286
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "std::type_info::operator==(std::type_info const&) const [clone .isra.13]",
+            "count": 3400010,
+            "cost": 13600200
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::Type_Info::bare_equal(chaiscript::Type_Info const&) const",
+            "count": 3400003,
+            "cost": 20400141
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::is_attribute_function() const",
+            "count": 3200002,
+            "cost": 6400004
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value* std::__copy_move<false, false, std::random_access_iterator_tag>::__copy_m<chaiscript::Boxed_Value const*, chaiscript::Boxed_Value*>(chaiscript::Boxed_Value const*, chaiscript::Boxed_Value const*, chaiscript::Boxed_Value*)",
+            "count": 2800000,
+            "cost": 64400000
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Int_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 2600002,
+            "cost": 33800026
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Cast_Helper<std::string&>::Result_Type chaiscript::boxed_cast<std::string&>(chaiscript::Boxed_Value const&, chaiscript::Type_Conversions const*)",
+            "count": 2600000,
+            "cost": 174200000
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "void* chaiscript::detail::throw_if_null<void>(void*)",
+            "count": 2600000,
+            "cost": 10400000
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Cast_Helper_Inner<std::string&>::cast(chaiscript::Boxed_Value const&, chaiscript::Type_Conversions const*)",
+            "count": 2600000,
+            "cost": 70200000
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/multiarch/memcpy-ssse3-back.S",
+            "function_name": "__memmove_ssse3_back",
+            "count": 2400024,
+            "cost": 37600336
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Cast_Helper<int>::Result_Type chaiscript::boxed_cast<int>(chaiscript::Boxed_Value const&, chaiscript::Type_Conversions const*)",
+            "count": 2400000,
+            "cost": 91200000
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "__gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)",
+            "count": 1601633,
+            "cost": 48422044
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::unique_lock<chaiscript::detail::threading::shared_mutex>::unlock()",
+            "count": 1600493,
+            "cost": 49615283
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "std::string::compare(std::string const&) const",
+            "count": 1600337,
+            "cost": 68214435
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "std::__exception_ptr::exception_ptr::exception_ptr()",
+            "count": 1600002,
+            "cost": 3200004
+          }
+        ],
+        "test_name": "performance.profile_cpp_calls.chai"
+      },
+      {
+        "version": "1",
+        "creator": "callgrind-3.10.0.SVN",
+        "pid": "23549",
+        "cmd": " /home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai /home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/performance_tests/profile_math.chai",
+        "part": "1",
+        "desc": "Trigger: Program termination",
+        "positions": "line",
+        "events": "Ir",
+        "summary": "226076142",
+        "totals": 226076142,
+        "data": [
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::AST_Node::eval(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 370065,
+            "cost": 1338441388
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Binary_Operator_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 119988,
+            "cost": 460955850
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "0x0000000000453ef6",
+            "count": 1,
+            "cost": 224025739
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/csu/libc-start.c",
+            "function_name": "(below main)",
+            "count": 1,
+            "cost": 224024299
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "main",
+            "count": 1,
+            "cost": 223893889
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::Operator(unsigned long)'2",
+            "count": 16563,
+            "cost": 210045098
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::do_eval(std::string const&, std::string const&, bool)",
+            "count": 6,
+            "cost": 207632438
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::AST_Node::eval(chaiscript::detail::Dispatch_State const&) const",
+            "count": 6,
+            "cost": 187403443
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::File_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 6,
+            "cost": 187403371
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::eval_file(std::string const&, std::shared_ptr<chaiscript::detail::Exception_Handler_Base> const&)",
+            "count": 1,
+            "cost": 186359871
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::For_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 1,
+            "cost": 185771737
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Block_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 10002,
+            "cost": 178154058
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Equation_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 10001,
+            "cost": 175925911
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Binary_Operator_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 19999,
+            "cost": 166804489
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Fun_Call_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 10002,
+            "cost": 151849670
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Binary_Operator_AST_Node::do_oper(chaiscript::detail::Dispatch_State const&, chaiscript::Operators::Opers, std::string const&, chaiscript::Boxed_Value const&, chaiscript::Boxed_Value const&) const",
+            "count": 139987,
+            "cost": 77472802
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Number::oper(chaiscript::Operators::Opers, chaiscript::Boxed_Value const&, chaiscript::Boxed_Value const&)",
+            "count": 149986,
+            "cost": 73923122
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()",
+            "count": 412694,
+            "cost": 57988839
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "operator new(unsigned long)",
+            "count": 472486,
+            "cost": 52862778
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "malloc",
+            "count": 472650,
+            "cost": 47282457
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::Boxed_Number::oper_rhs<int>(chaiscript::Operators::Opers, chaiscript::Boxed_Value const&, chaiscript::Boxed_Value const&)",
+            "count": 109990,
+            "cost": 46625808
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "operator delete(void*)",
+            "count": 472486,
+            "cost": 42623153
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "free",
+            "count": 472654,
+            "cost": 41692351
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::ChaiScript(std::vector<std::string, std::allocator<std::string> >, std::vector<std::string, std::allocator<std::string> >)",
+            "count": 1,
+            "cost": 35878313
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::load_module(std::string const&)",
+            "count": 1,
+            "cost": 35151604
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::load_module(std::string const&, std::string const&)",
+            "count": 2,
+            "cost": 35130075
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "_int_free",
+            "count": 472655,
+            "cost": 34602886
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+            "count": 141463,
+            "cost": 34433657
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::detail::const_var_impl<int>(int const&)",
+            "count": 70021,
+            "cost": 28294958
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "_int_malloc",
+            "count": 472650,
+            "cost": 27845509
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::Boxed_Number::const_binary_go<double>(chaiscript::Operators::Opers, double const&, double const&)",
+            "count": 59994,
+            "cost": 25287693
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "void chaiscript::Module::apply<chaiscript::ChaiScript, chaiscript::detail::Dispatch_Engine>(chaiscript::ChaiScript&, chaiscript::detail::Dispatch_Engine&) const",
+            "count": 1,
+            "cost": 24828945
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()'2",
+            "count": 148500,
+            "cost": 24579245
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::detail::const_var_impl<double>(double const&)",
+            "count": 59997,
+            "cost": 24239424
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::Statements()'2",
+            "count": 122,
+            "cost": 21680968
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::Boxed_Number::const_binary_int_go<int>(chaiscript::Operators::Opers, int const&, int const&)",
+            "count": 49995,
+            "cost": 21217878
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::parse(std::string const&, std::string)",
+            "count": 6,
+            "cost": 19814573
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::Statements()",
+            "count": 6,
+            "cost": 19805414
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::Boxed_Number::oper_rhs<double>(chaiscript::Operators::Opers, chaiscript::Boxed_Value const&, chaiscript::Boxed_Value const&)",
+            "count": 39996,
+            "cost": 19298070
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::Def(bool)",
+            "count": 277,
+            "cost": 17578963
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Any::Data_Impl<std::shared_ptr<int const> >::~Data_Impl()",
+            "count": 70021,
+            "cost": 15874821
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::operator()(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 10004,
+            "cost": 15496755
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Function::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 10001,
+            "cost": 15294601
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::dispatch::dispatch<std::vector<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>, std::allocator<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> > > >(std::vector<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>, std::allocator<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> > > const&, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&)",
+            "count": 10004,
+            "cost": 15257373
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::Block()",
+            "count": 269,
+            "cost": 15176512
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::Operator(unsigned long)",
+            "count": 1054,
+            "cost": 14760333
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::Equation()",
+            "count": 1053,
+            "cost": 13749826
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Any::Data_Impl<std::shared_ptr<double const> >::~Data_Impl()",
+            "count": 59997,
+            "cost": 13699317
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+            "count": 141463,
+            "cost": 13056766
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/ld-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/elf/dl-reloc.c",
+            "function_name": "_dl_relocate_object",
+            "count": 10,
+            "cost": 11567856
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Number::get_common_type(chaiscript::Boxed_Value const&)",
+            "count": 319974,
+            "cost": 7569339
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/strlen.S",
+            "function_name": "strlen",
+            "count": 172525,
+            "cost": 2809744
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/multiarch/../strcmp.S",
+            "function_name": "__strcmp_ssse3",
+            "count": 150004,
+            "cost": 4016846
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)",
+            "count": 141463,
+            "cost": 848778
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::Symbol_(char const*)",
+            "count": 140237,
+            "cost": 7340818
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Int_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 129990,
+            "cost": 1689870
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_add_ref_copy()",
+            "count": 104980,
+            "cost": 629880
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/multiarch/memcmp-sse4.S",
+            "function_name": "__memcmp_sse4_1",
+            "count": 97378,
+            "cost": 1941889
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "std::string::_Rep::_M_dispose(std::allocator<char> const&)",
+            "count": 89609,
+            "cost": 1152764
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::__detail::_Map_base<void*, std::pair<void* const, chaiscript::detail::Stack_Holder>, std::allocator<std::pair<void* const, chaiscript::detail::Stack_Holder> >, std::__detail::_Select1st, std::equal_to<void*>, std::hash<void*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](void* const&)",
+            "count": 70048,
+            "cost": 1753858
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<int const, std::allocator<int>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+            "count": 70021,
+            "cost": 70021
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<int const, std::allocator<int>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+            "count": 70021,
+            "cost": 6421986
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<int const, std::allocator<int>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)",
+            "count": 70021,
+            "cost": 420126
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<double const, std::allocator<double>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)",
+            "count": 59997,
+            "cost": 359982
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<double const, std::allocator<double>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+            "count": 59997,
+            "cost": 59997
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<double const, std::allocator<double>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+            "count": 59997,
+            "cost": 5599722
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::SkipWS(bool)",
+            "count": 57645,
+            "cost": 8741227
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Id_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 50006,
+            "cost": 8895069
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >::~vector()",
+            "count": 40025,
+            "cost": 2922736
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::threading::Thread_Storage<chaiscript::Type_Conversions::Conversion_Saves>::operator->()",
+            "count": 40011,
+            "cost": 1201342
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "void chaiscript::Boxed_Number::check_divide_by_zero<int>(int, std::enable_if<std::is_integral<int>::value, void>::type*) [clone .isra.307]",
+            "count": 29997,
+            "cost": 89991
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::new_function_call(chaiscript::detail::Stack_Holder&) [clone .isra.1047]",
+            "count": 20007,
+            "cost": 2881963
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::Boxed_Number::const_binary_go<int>(chaiscript::Operators::Opers, int const&, int const&)",
+            "count": 19998,
+            "cost": 8499298
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::Symbol(char const*, bool, bool)",
+            "count": 19650,
+            "cost": 4954558
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::Keyword(char const*, bool)",
+            "count": 17253,
+            "cost": 3703138
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "__gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)",
+            "count": 11635,
+            "cost": 342219
+          }
+        ],
+        "test_name": "performance.profile_math.chai"
+      },
+      {
+        "version": "1",
+        "creator": "callgrind-3.10.0.SVN",
+        "pid": "23545",
+        "cmd": " /home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai /home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/performance_tests/heterogenous_array_loop.chai",
+        "part": "1",
+        "desc": "Trigger: Program termination",
+        "positions": "line",
+        "events": "Ir",
+        "summary": "828639896",
+        "totals": 828639896,
+        "data": [
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::AST_Node::eval(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 880308,
+            "cost": 5579529339
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Block_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 80010,
+            "cost": 1372199572
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "0x0000000000453ef6",
+            "count": 1,
+            "cost": 826589441
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/csu/libc-start.c",
+            "function_name": "(below main)",
+            "count": 1,
+            "cost": 826588001
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "main",
+            "count": 1,
+            "cost": 826457811
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::do_eval(std::string const&, std::string const&, bool)",
+            "count": 6,
+            "cost": 810167450
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::AST_Node::eval(chaiscript::detail::Dispatch_State const&) const",
+            "count": 6,
+            "cost": 789777237
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::File_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 6,
+            "cost": 789777165
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::eval_file(std::string const&, std::shared_ptr<chaiscript::detail::Exception_Handler_Base> const&)",
+            "count": 1,
+            "cost": 788894921
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Fun_Call_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 1,
+            "cost": 788160204
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::operator()(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 1,
+            "cost": 788156634
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Dynamic_Proxy_Function_Impl<chaiscript::eval::Def_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const::{lambda(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&)#2}>::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 1,
+            "cost": 788156612
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::detail::eval_function(chaiscript::detail::Dispatch_Engine&, std::shared_ptr<chaiscript::AST_Node> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, std::map<std::string, chaiscript::Boxed_Value, std::less<std::string>, std::allocator<std::pair<std::string const, chaiscript::Boxed_Value> > > const*) [clone .constprop.1507]",
+            "count": 1,
+            "cost": 788156505
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Block_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 1,
+            "cost": 788155937
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::For_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 1,
+            "cost": 787365502
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::For_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 10000,
+            "cost": 771036710
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Fun_Call_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 70058,
+            "cost": 540318180
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::operator()(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const'2",
+            "count": 230103,
+            "cost": 509340511
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::dispatch::dispatch<std::vector<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>, std::allocator<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> > > >(std::vector<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>, std::allocator<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> > > const&, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&)",
+            "count": 140013,
+            "cost": 454459200
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Function::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 70022,
+            "cost": 252590980
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::call_function(std::string const&, std::__atomic_base<unsigned long>&, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&) const",
+            "count": 80013,
+            "cost": 231981504
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::Operator(unsigned long)'2",
+            "count": 17090,
+            "cost": 211296318
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Array_Call_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 60000,
+            "cost": 173160260
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Equation_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 20003,
+            "cost": 166435338
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Callable_Impl<std::string (chaiscript::Boxed_Number const&), chaiscript::dispatch::detail::Const_Caller<std::string, chaiscript::Boxed_Number<> > >::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<std::vector> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 40000,
+            "cost": 121643940
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "operator new(unsigned long)",
+            "count": 913736,
+            "cost": 105348886
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "malloc",
+            "count": 913899,
+            "cost": 94473468
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Number::to_string() const",
+            "count": 40000,
+            "cost": 86733940
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Dynamic_Proxy_Function_Impl<chaiscript::eval::Def_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const::{lambda(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&)#2}>::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const'2",
+            "count": 10010,
+            "cost": 85578162
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::detail::eval_function(chaiscript::detail::Dispatch_Engine&, std::shared_ptr<chaiscript::AST_Node> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, std::map<std::string, chaiscript::Boxed_Value, std::less<std::string>, std::allocator<std::pair<std::string const, chaiscript::Boxed_Value> > > const*) [clone .constprop.1507]'2",
+            "count": 10018,
+            "cost": 83785244
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "operator delete(void*)",
+            "count": 913736,
+            "cost": 83215716
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "free",
+            "count": 913904,
+            "cost": 81402414
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::filter(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 360077,
+            "cost": 77282268
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Id_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 380116,
+            "cost": 68352377
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "_int_free",
+            "count": 913905,
+            "cost": 67694199
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::compare_type_to_param(chaiscript::Type_Info const&, chaiscript::Boxed_Value const&, chaiscript::Type_Conversions const&)",
+            "count": 460104,
+            "cost": 66480408
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/multiarch/../strcmp.S",
+            "function_name": "__strcmp_ssse3",
+            "count": 2460974,
+            "cost": 64965049
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()",
+            "count": 1563282,
+            "cost": 61372987
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Dot_Access_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 10010,
+            "cost": 59349453
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libpthread-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/nptl/pthread_mutex_unlock.c",
+            "function_name": "_int_malloc",
+            "count": 913899,
+            "cost": 56944222
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "std::string chaiscript::Boxed_Number::to_string_aux<long double>(chaiscript::Boxed_Value const&)",
+            "count": 10000,
+            "cost": 51623940
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "void std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >::_M_range_insert<__gnu_cxx::__normal_iterator<chaiscript::Boxed_Value const*, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > > >(__gnu_cxx::__normal_iterator<chaiscript::Boxed_Value*, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > >, __gnu_cxx::__normal_iterator<chaiscript::Boxed_Value const*, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > >, __gnu_cxx::__normal_iterator<chaiscript::Boxed_Value const*, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > >, std::forward_iterator_tag)",
+            "count": 140069,
+            "cost": 41613924
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >::~vector()",
+            "count": 410185,
+            "cost": 41549458
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Rb_tree<std::type_info const*, std::type_info const*, std::_Identity<std::type_info const*>, chaiscript::Type_Conversions::Less_Than, std::allocator<std::type_info const*> >::find(std::type_info const* const&) const",
+            "count": 250083,
+            "cost": 40574752
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::ChaiScript(std::vector<std::string, std::allocator<std::string> >, std::vector<std::string, std::allocator<std::string> >)",
+            "count": 1,
+            "cost": 35878321
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::load_module(std::string const&)",
+            "count": 1,
+            "cost": 35151604
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::load_module(std::string const&, std::string const&)",
+            "count": 2,
+            "cost": 35130075
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Binary_Operator_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 80001,
+            "cost": 30720450
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::vector<std::pair<unsigned long, chaiscript::dispatch::Proxy_Function_Base const*>, std::allocator<std::pair<unsigned long, chaiscript::dispatch::Proxy_Function_Base const*> > >::reserve(unsigned long)",
+            "count": 160045,
+            "cost": 27868033
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::dispatch::dispatch<std::vector<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>, std::allocator<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> > > >(std::vector<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>, std::allocator<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> > > const&, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&)'2",
+            "count": 20032,
+            "cost": 27862437
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_add_ref_copy()",
+            "count": 955313,
+            "cost": 5731878
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/multiarch/memcmp-sse4.S",
+            "function_name": "__memcmp_sse4_1",
+            "count": 747991,
+            "cost": 16909104
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::__detail::_Map_base<void*, std::pair<void* const, chaiscript::detail::Stack_Holder>, std::allocator<std::pair<void* const, chaiscript::detail::Stack_Holder> >, std::__detail::_Select1st, std::equal_to<void*>, std::hash<void*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](void* const&)",
+            "count": 620269,
+            "cost": 15509383
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "std::string::_Rep::_M_dispose(std::allocator<char> const&)",
+            "count": 341192,
+            "cost": 15668431
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Number::get_common_type(chaiscript::Boxed_Value const&)",
+            "count": 330009,
+            "cost": 13350762
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/strlen.S",
+            "function_name": "strlen",
+            "count": 286079,
+            "cost": 4627224
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Type_Conversions::thread_cache() const",
+            "count": 230073,
+            "cost": 7595362
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libpthread-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/nptl/pthread_mutex_unlock.c",
+            "function_name": "pthread_mutex_unlock",
+            "count": 161159,
+            "cost": 2578731
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libpthread-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/nptl/../nptl/pthread_mutex_lock.c",
+            "function_name": "pthread_mutex_lock",
+            "count": 161156,
+            "cost": 4351310
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::threading::Thread_Storage<chaiscript::Type_Conversions::Conversion_Saves>::operator->()",
+            "count": 160074,
+            "cost": 4803096
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::new_function_call(chaiscript::detail::Stack_Holder&) [clone .isra.1047]",
+            "count": 160072,
+            "cost": 20009914
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "void const* chaiscript::detail::throw_if_null<void const>(void const*)",
+            "count": 160050,
+            "cost": 640200
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::Symbol_(char const*)",
+            "count": 142904,
+            "cost": 7473099
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Type_Info::bare_equal(chaiscript::Type_Info const&) const [clone .isra.22]",
+            "count": 142066,
+            "cost": 6390155
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "std::locale::id::_M_id() const",
+            "count": 140164,
+            "cost": 701188
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::pop_function_call(chaiscript::detail::Stack_Holder&)",
+            "count": 140069,
+            "cost": 420263
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "__gnu_cxx::new_allocator<chaiscript::Boxed_Value>::allocate(unsigned long, void const*) [clone .isra.521]",
+            "count": 140035,
+            "cost": 16107951
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >::_M_check_len(unsigned long, char const*) const",
+            "count": 140035,
+            "cost": 2100525
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::type_info::operator==(std::type_info const&) const [clone .isra.14]",
+            "count": 140008,
+            "cost": 4760242
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&)",
+            "count": 138734,
+            "cost": 20037071
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "std::string::_Rep::_M_destroy(std::allocator<char> const&)",
+            "count": 138734,
+            "cost": 13310115
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/multiarch/memcpy-sse2-unaligned.S",
+            "function_name": "__memcpy_sse2_unaligned",
+            "count": 133506,
+            "cost": 2987845
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "__dynamic_cast",
+            "count": 131905,
+            "cost": 13672291
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "std::type_info::operator==(std::type_info const&) const [clone .isra.13]",
+            "count": 120030,
+            "cost": 2400992
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::Type_Info::bare_equal(chaiscript::Type_Info const&) const",
+            "count": 120023,
+            "cost": 3181153
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/libio/genops.c",
+            "function_name": "_IO_default_xsputn",
+            "count": 110009,
+            "cost": 3030918
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+            "count": 91539,
+            "cost": 8283790
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)",
+            "count": 91539,
+            "cost": 549234
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+            "count": 91532,
+            "cost": 23719714
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "void std::vector<std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >, std::allocator<std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > > >::emplace_back<>()",
+            "count": 90013,
+            "cost": 992159
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "void std::vector<std::vector<std::pair<std::string, chaiscript::Boxed_Value>, std::allocator<std::pair<std::string, chaiscript::Boxed_Value> > >, std::allocator<std::vector<std::pair<std::string, chaiscript::Boxed_Value>, std::allocator<std::pair<std::string, chaiscript::Boxed_Value> > > > >::emplace_back<>()",
+            "count": 90012,
+            "cost": 4074758
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::pop_scope(chaiscript::detail::Stack_Holder&)",
+            "count": 90012,
+            "cost": 22396271
+          }
+        ],
+        "test_name": "performance.heterogenous_array_loop.chai"
+      },
+      {
+        "version": "1",
+        "creator": "callgrind-3.10.0.SVN",
+        "pid": "23547",
+        "cmd": " /home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai /home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/performance_tests/profile.chai",
+        "part": "1",
+        "desc": "Trigger: Program termination",
+        "positions": "line",
+        "events": "Ir",
+        "summary": "2387215363",
+        "totals": 2387215363,
+        "data": [
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::AST_Node::eval(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 3580096,
+            "cost": 12981628641
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "0x0000000000453ef6",
+            "count": 1,
+            "cost": 2385164943
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/csu/libc-start.c",
+            "function_name": "(below main)",
+            "count": 1,
+            "cost": 2385163503
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "main",
+            "count": 1,
+            "cost": 2385033093
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::do_eval(std::string const&, std::string const&, bool)",
+            "count": 6,
+            "cost": 2368770815
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::AST_Node::eval(chaiscript::detail::Dispatch_State const&) const",
+            "count": 6,
+            "cost": 2348442395
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::File_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 6,
+            "cost": 2348442323
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::eval_file(std::string const&, std::shared_ptr<chaiscript::detail::Exception_Handler_Base> const&)",
+            "count": 1,
+            "cost": 2347498250
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::For_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 1,
+            "cost": 2346810558
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Block_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 100003,
+            "cost": 2216121836
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Equation_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 340001,
+            "cost": 1803902375
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Fun_Call_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 330002,
+            "cost": 1740124622
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Binary_Operator_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 390001,
+            "cost": 1180502141
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Block_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 139999,
+            "cost": 1140005700
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::If_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 100000,
+            "cost": 992988364
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::operator()(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 530004,
+            "cost": 811477910
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Function::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 530001,
+            "cost": 802435334
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::dispatch::dispatch<std::vector<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>, std::allocator<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> > > >(std::vector<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>, std::allocator<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> > > const&, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&)",
+            "count": 530004,
+            "cost": 798758679
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Fun_Call_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 200001,
+            "cost": 611209786
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::If_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 90000,
+            "cost": 560837904
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::operator()(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const'2",
+            "count": 530007,
+            "cost": 528435197
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "operator new(unsigned long)",
+            "count": 3462541,
+            "cost": 378780089
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "malloc",
+            "count": 3462705,
+            "cost": 337319108
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Id_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 1260009,
+            "cost": 336367739
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()",
+            "count": 5852706,
+            "cost": 330302478
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Callable_Impl<std::shared_ptr<double> (chaiscript::Boxed_Number const&), chaiscript::dispatch::detail::Fun_Caller<std::shared_ptr<double><chaiscript::Boxed_Number const&> > >::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<std::vector> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 330000,
+            "cost": 322460609
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "operator delete(void*)",
+            "count": 3462541,
+            "cost": 313998820
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "free",
+            "count": 3462709,
+            "cost": 307087908
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "_int_free",
+            "count": 3462710,
+            "cost": 255147618
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Cast_Helper<chaiscript::Boxed_Number const&>::Result_Type chaiscript::boxed_cast<chaiscript::Boxed_Number const&>(chaiscript::Boxed_Value const&, chaiscript::Type_Conversions const*)",
+            "count": 530002,
+            "cost": 216243547
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::Operator(unsigned long)'2",
+            "count": 16691,
+            "cost": 209116691
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libpthread-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/nptl/pthread_mutex_unlock.c",
+            "function_name": "_int_malloc",
+            "count": 3462704,
+            "cost": 195288760
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Callable_Impl<std::shared_ptr<int> (chaiscript::Boxed_Number const&), chaiscript::dispatch::detail::Fun_Caller<std::shared_ptr<int><chaiscript::Boxed_Number const&> > >::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<std::vector> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 200001,
+            "cost": 194304128
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Number::oper(chaiscript::Operators::Opers, chaiscript::Boxed_Value const&, chaiscript::Boxed_Value const&)",
+            "count": 730000,
+            "cost": 172790208
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+            "count": 681479,
+            "cost": 156105279
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Rb_tree<std::string, std::pair<std::string const, chaiscript::Boxed_Value>, std::_Select1st<std::pair<std::string const, chaiscript::Boxed_Value> >, std::less<std::string>, std::allocator<std::pair<std::string const, chaiscript::Boxed_Value> > >::find(std::string const&) const",
+            "count": 530022,
+            "cost": 152871365
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/multiarch/../strcmp.S",
+            "function_name": "__strcmp_ssse3",
+            "count": 5030013,
+            "cost": 133097062
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "void std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >::_M_range_insert<__gnu_cxx::__normal_iterator<chaiscript::Boxed_Value const*, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > > >(__gnu_cxx::__normal_iterator<chaiscript::Boxed_Value*, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > >, __gnu_cxx::__normal_iterator<chaiscript::Boxed_Value const*, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > >, __gnu_cxx::__normal_iterator<chaiscript::Boxed_Value const*, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > >, std::forward_iterator_tag)",
+            "count": 530006,
+            "cost": 131901748
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Binary_Operator_AST_Node::do_oper(chaiscript::detail::Dispatch_State const&, chaiscript::Operators::Opers, std::string const&, chaiscript::Boxed_Value const&, chaiscript::Boxed_Value const&) const",
+            "count": 390001,
+            "cost": 131420396
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::new_function_call(chaiscript::detail::Stack_Holder&) [clone .isra.1047]",
+            "count": 870007,
+            "cost": 125091963
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >::~vector()",
+            "count": 1640029,
+            "cost": 118082824
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::Boxed_Number::oper_rhs<double>(chaiscript::Operators::Opers, chaiscript::Boxed_Value const&, chaiscript::Boxed_Value const&)",
+            "count": 490001,
+            "cost": 99160282
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Rb_tree<std::type_info const*, std::type_info const*, std::_Identity<std::type_info const*>, chaiscript::Type_Conversions::Less_Than, std::allocator<std::type_info const*> >::find(std::type_info const* const&) const",
+            "count": 530021,
+            "cost": 98583320
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get<double>(std::shared_ptr<double> const&, bool)",
+            "count": 330000,
+            "cost": 96360378
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >::reserve(unsigned long)",
+            "count": 530004,
+            "cost": 87980664
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()'2",
+            "count": 638518,
+            "cost": 86101469
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/multiarch/memcmp-sse4.S",
+            "function_name": "__memcmp_sse4_1",
+            "count": 3927160,
+            "cost": 85470533
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::vector<std::pair<unsigned long, chaiscript::dispatch::Proxy_Function_Base const*>, std::allocator<std::pair<unsigned long, chaiscript::dispatch::Proxy_Function_Base const*> > >::reserve(unsigned long)",
+            "count": 530008,
+            "cost": 83741785
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Number::get_common_type(chaiscript::Boxed_Value const&)",
+            "count": 1990003,
+            "cost": 77690118
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Any::Data_Impl<std::shared_ptr<double> >::~Data_Impl()",
+            "count": 330001,
+            "cost": 75570120
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_add_ref_copy()",
+            "count": 3524973,
+            "cost": 21149838
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::__detail::_Map_base<void*, std::pair<void* const, chaiscript::detail::Stack_Holder>, std::allocator<std::pair<void* const, chaiscript::detail::Stack_Holder> >, std::__detail::_Select1st, std::equal_to<void*>, std::hash<void*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](void* const&)",
+            "count": 2130057,
+            "cost": 53254083
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::threading::Thread_Storage<chaiscript::Type_Conversions::Conversion_Saves>::operator->()",
+            "count": 1730011,
+            "cost": 51901342
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+            "count": 681479,
+            "cost": 63658254
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)",
+            "count": 681479,
+            "cost": 4088874
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "__gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)",
+            "count": 531635,
+            "cost": 18302049
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libpthread-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/nptl/pthread_mutex_unlock.c",
+            "function_name": "pthread_mutex_unlock",
+            "count": 531049,
+            "cost": 8496971
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libpthread-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/nptl/../nptl/pthread_mutex_lock.c",
+            "function_name": "pthread_mutex_lock",
+            "count": 531046,
+            "cost": 14338340
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::unique_lock<chaiscript::detail::threading::shared_mutex>::unlock()",
+            "count": 530494,
+            "cost": 16445314
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "std::string::compare(std::string const&) const",
+            "count": 530338,
+            "cost": 24654471
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::compare_type_to_param(chaiscript::Type_Info const&, chaiscript::Boxed_Value const&, chaiscript::Type_Conversions const&)",
+            "count": 530035,
+            "cost": 29683903
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::filter(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 530027,
+            "cost": 44524731
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Type_Conversions::thread_cache() const",
+            "count": 530017,
+            "cost": 17493292
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "std::type_info::operator==(std::type_info const&) const [clone .isra.13]",
+            "count": 530011,
+            "cost": 19080236
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::pop_function_call(chaiscript::detail::Stack_Holder&)",
+            "count": 530006,
+            "cost": 9060101
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::Type_Info::bare_equal(chaiscript::Type_Info const&) const",
+            "count": 530004,
+            "cost": 24910188
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Cast_Helper<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base const> const&>::Result_Type chaiscript::boxed_cast<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base const> const&>(chaiscript::Boxed_Value const&, chaiscript::Type_Conversions const*)",
+            "count": 530003,
+            "cost": 32330183
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Cast_Helper_Inner<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base const> >::cast(chaiscript::Boxed_Value const&, chaiscript::Type_Conversions const*) [clone .isra.590]",
+            "count": 530003,
+            "cost": 17490099
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Any::Data_Impl<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base const> >::data()",
+            "count": 530003,
+            "cost": 1060006
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Number::validate_boxed_number(chaiscript::Boxed_Value const&)",
+            "count": 530002,
+            "cost": 36040136
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Cast_Helper<chaiscript::Boxed_Number>::cast(chaiscript::Boxed_Value const&, chaiscript::Type_Conversions const*) [clone .isra.212]",
+            "count": 530002,
+            "cost": 50350190
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >::_M_check_len(unsigned long, char const*) const",
+            "count": 440005,
+            "cost": 6600075
+          }
+        ],
+        "test_name": "performance.profile.chai"
+      },
+      {
+        "version": "1",
+        "creator": "callgrind-3.10.0.SVN",
+        "pid": "23550",
+        "cmd": " /home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai /home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/performance_tests/type_conversions.chai",
+        "part": "1",
+        "desc": "Trigger: Program termination",
+        "positions": "line",
+        "events": "Ir",
+        "summary": "2773290505",
+        "totals": 2773290505,
+        "data": [
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::AST_Node::eval(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 1200097,
+            "cost": 9215530535
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "0x0000000000453ef6",
+            "count": 1,
+            "cost": 2771240102
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/csu/libc-start.c",
+            "function_name": "(below main)",
+            "count": 1,
+            "cost": 2771238662
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "main",
+            "count": 1,
+            "cost": 2771108456
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::do_eval(std::string const&, std::string const&, bool)",
+            "count": 6,
+            "cost": 2754440388
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::AST_Node::eval(chaiscript::detail::Dispatch_State const&) const",
+            "count": 6,
+            "cost": 2733965885
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::File_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 6,
+            "cost": 2733965813
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::ChaiScript::eval_file(std::string const&, std::shared_ptr<chaiscript::detail::Exception_Handler_Base> const&)",
+            "count": 1,
+            "cost": 2733167897
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::For_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 1,
+            "cost": 2729091764
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Block_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 50001,
+            "cost": 2673178814
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Boxed_Value chaiscript::dispatch::dispatch<std::vector<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>, std::allocator<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> > > >(std::vector<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base>, std::allocator<std::shared_ptr<chaiscript::dispatch::Proxy_Function_Base> > > const&, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&)",
+            "count": 350004,
+            "cost": 1737894327
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Dot_Access_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 100001,
+            "cost": 1151419603
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::operator()(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 450005,
+            "cost": 1070890644
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Equation_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 50003,
+            "cost": 960240265
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Fun_Call_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 100004,
+            "cost": 909945711
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::call_member(std::string const&, std::__atomic_base<unsigned long>&, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, bool)",
+            "count": 200001,
+            "cost": 901310219
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::filter(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 750014,
+            "cost": 691253667
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::compare_type_to_param(chaiscript::Type_Info const&, chaiscript::Boxed_Value const&, chaiscript::Type_Conversions const&)",
+            "count": 900017,
+            "cost": 668753245
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Function::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 100003,
+            "cost": 534326910
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Type_Conversions::has_conversion(chaiscript::Type_Info const&, chaiscript::Type_Info const&) const",
+            "count": 350000,
+            "cost": 452751524
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Callable_Impl<unsigned long (std::string const*), std::shared_ptr<chaiscript::Module> chaiscript::bootstrap::standard_library::string_type<std::string>(std::string const&, std::shared_ptr<chaiscript::Module>)::{lambda(std::string const*)#10}>::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<std::vector> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 150000,
+            "cost": 423200744
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/multiarch/../strcmp.S",
+            "function_name": "__strcmp_ssse3",
+            "count": 17162410,
+            "cost": 417825428
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Dot_Access_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 100000,
+            "cost": 395453466
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "operator new(unsigned long)",
+            "count": 3373288,
+            "cost": 382454123
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::call_function(std::string const&, std::__atomic_base<unsigned long>&, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&) const",
+            "count": 50002,
+            "cost": 364474109
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Cast_Helper<std::string const*>::Result_Type chaiscript::boxed_cast<std::string const*>(chaiscript::Boxed_Value const&, chaiscript::Type_Conversions const*)",
+            "count": 150000,
+            "cost": 358850074
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "malloc",
+            "count": 3373474,
+            "cost": 342068749
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()",
+            "count": 3752846,
+            "cost": 312365894
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "operator delete(void*)",
+            "count": 3373288,
+            "cost": 309527320
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "free",
+            "count": 3373486,
+            "cost": 302808225
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::operator()(std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > const&, chaiscript::Type_Conversions const&) const'2",
+            "count": 100005,
+            "cost": 283530131
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/malloc/malloc.c",
+            "function_name": "_int_free",
+            "count": 3373484,
+            "cost": 252206304
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Rb_tree<std::type_info const*, std::type_info const*, std::_Identity<std::type_info const*>, chaiscript::Type_Conversions::Less_Than, std::allocator<std::type_info const*> >::find(std::type_info const* const&) const",
+            "count": 1300009,
+            "cost": 241951868
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::parser::ChaiScript_Parser::Operator(unsigned long)'2",
+            "count": 16841,
+            "cost": 210471637
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libpthread-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/nptl/pthread_mutex_unlock.c",
+            "function_name": "_int_malloc",
+            "count": 3373476,
+            "cost": 203697105
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libtest_module.so",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Callable_Impl<char const* (Type2 const&), chaiscript::dispatch::detail::Const_Caller<char const*, Type2<> > >::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<std::vector> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 200000,
+            "cost": 194849966
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Fun_Call_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const'2",
+            "count": 100000,
+            "cost": 192103572
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Type_Conversions::get_conversion(chaiscript::Type_Info const&, chaiscript::Type_Info const&) const",
+            "count": 250000,
+            "cost": 182850000
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+            "count": 701522,
+            "cost": 171601753
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libtest_module.so",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Type_Conversion_Impl<std::shared_ptr<chaiscript::detail::Type_Conversion_Base> chaiscript::type_conversion<char const*, std::string>()::{lambda(chaiscript::Boxed_Value const&)#1}>::convert(chaiscript::Boxed_Value const&) const",
+            "count": 200000,
+            "cost": 141200463
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Callable_Impl<std::shared_ptr<std::string> (std::string const&), chaiscript::dispatch::detail::Constructor<std::string<std::string const&> > >::do_call(std::vector<chaiscript::Boxed_Value, std::allocator<std::vector> > const&, chaiscript::Type_Conversions const&) const",
+            "count": 50000,
+            "cost": 139300691
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libtest_module.so",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Cast_Helper<Type2 const&>::Result_Type chaiscript::boxed_cast<Type2 const&>(chaiscript::Boxed_Value const&, chaiscript::Type_Conversions const*)",
+            "count": 200000,
+            "cost": 136649954
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::eval::Id_AST_Node::eval_internal(chaiscript::detail::Dispatch_State const&) const",
+            "count": 500008,
+            "cost": 135213759
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::pop_function_call(chaiscript::detail::Stack_Holder&)",
+            "count": 400005,
+            "cost": 119550082
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Dispatch_Engine::new_function_call(chaiscript::detail::Stack_Holder&) [clone .isra.1047]",
+            "count": 450008,
+            "cost": 115251431
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Cast_Helper<std::string const&>::Result_Type chaiscript::boxed_cast<std::string const&>(chaiscript::Boxed_Value const&, chaiscript::Type_Conversions const*)",
+            "count": 50001,
+            "cost": 114750502
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >::~vector()",
+            "count": 950022,
+            "cost": 99502458
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()'2",
+            "count": 508821,
+            "cost": 95107632
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Any::Data_Impl<std::shared_ptr<std::string> >::~Data_Impl()",
+            "count": 300001,
+            "cost": 86100362
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libtest_module.so",
+            "source_file": "???",
+            "function_name": "std::shared_ptr<chaiscript::Boxed_Value::Data> chaiscript::Boxed_Value::Object_Data::get<std::string>(std::string, bool)",
+            "count": 200000,
+            "cost": 83600463
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "std::_Rb_tree_increment(std::_Rb_tree_node_base const*)",
+            "count": 6600000,
+            "cost": 67800000
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Type_Conversion_Base::bidir() const",
+            "count": 3500000,
+            "cost": 7000000
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/multiarch/memcmp-sse4.S",
+            "function_name": "__memcmp_sse4_1",
+            "count": 1918795,
+            "cost": 41478312
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_add_ref_copy()",
+            "count": 1805101,
+            "cost": 10830606
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::threading::Thread_Storage<chaiscript::Type_Conversions::Conversion_Saves>::operator->()",
+            "count": 1350016,
+            "cost": 40501418
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::__detail::_Map_base<void*, std::pair<void* const, chaiscript::detail::Stack_Holder>, std::allocator<std::pair<void* const, chaiscript::detail::Stack_Holder> >, std::__detail::_Select1st, std::equal_to<void*>, std::hash<void*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](void* const&)",
+            "count": 1150051,
+            "cost": 28753933
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libpthread-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/nptl/pthread_mutex_unlock.c",
+            "function_name": "pthread_mutex_unlock",
+            "count": 1051162,
+            "cost": 16818845
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libpthread-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/nptl/../nptl/pthread_mutex_lock.c",
+            "function_name": "pthread_mutex_lock",
+            "count": 1051159,
+            "cost": 28381433
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "std::string::_Rep::_M_dispose(std::allocator<char> const&)",
+            "count": 950817,
+            "cost": 29158134
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Type_Conversions::thread_cache() const",
+            "count": 950007,
+            "cost": 31354281
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::unique_lock<chaiscript::detail::threading::shared_mutex>::unlock()",
+            "count": 800543,
+            "cost": 24816833
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+            "count": 701522,
+            "cost": 65542224
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<chaiscript::Boxed_Value::Data, std::allocator<chaiscript::Boxed_Value::Data>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)",
+            "count": 701522,
+            "cost": 4209132
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "void const* chaiscript::detail::throw_if_null<void const>(void const*)",
+            "count": 700003,
+            "cost": 2800012
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::dispatch::Proxy_Function_Base::is_attribute_function() const",
+            "count": 700001,
+            "cost": 1400002
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/strlen.S",
+            "function_name": "strlen",
+            "count": 424871,
+            "cost": 6847524
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "void std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> >::_M_range_insert<__gnu_cxx::__normal_iterator<chaiscript::Boxed_Value const*, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > > >(__gnu_cxx::__normal_iterator<chaiscript::Boxed_Value*, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > >, __gnu_cxx::__normal_iterator<chaiscript::Boxed_Value const*, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > >, __gnu_cxx::__normal_iterator<chaiscript::Boxed_Value const*, std::vector<chaiscript::Boxed_Value, std::allocator<chaiscript::Boxed_Value> > >, std::forward_iterator_tag)",
+            "count": 400005,
+            "cost": 63951379
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "chaiscript::Type_Info::bare_equal(chaiscript::Type_Info const&) const [clone .isra.22]",
+            "count": 352554,
+            "cost": 15862115
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::vector<std::pair<unsigned long, chaiscript::dispatch::Proxy_Function_Base const*>, std::allocator<std::pair<unsigned long, chaiscript::dispatch::Proxy_Function_Base const*> > >::reserve(unsigned long)",
+            "count": 350006,
+            "cost": 63101941
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libchaiscript_stdlib-5.7.2.so",
+            "source_file": "???",
+            "function_name": "std::type_info::operator==(std::type_info const&) const [clone .isra.13]",
+            "count": 300009,
+            "cost": 6000164
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/libtest_module.so",
+            "source_file": "???",
+            "function_name": "chaiscript::detail::Type_Conversion_Impl<std::shared_ptr<chaiscript::detail::Type_Conversion_Base> chaiscript::type_conversion<TestBaseType, Type2, create_chaiscript_module_test_module::{lambda(TestBaseType const&)#1}>(create_chaiscript_module_test_module::{lambda(TestBaseType const&)#1} const&)::{lambda(chaiscript::Boxed_Value const&)#1}>::bidir() const",
+            "count": 300000,
+            "cost": 600000
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "std::string::_Rep::_M_destroy(std::allocator<char> const&)",
+            "count": 258448,
+            "cost": 23834595
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&)",
+            "count": 258448,
+            "cost": 33813044
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "char* std::string::_S_construct<char const*>(char const*, char const*, std::allocator<char> const&, std::forward_iterator_tag)",
+            "count": 258286,
+            "cost": 47386531
+          },
+          {
+            "object_file": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+            "source_file": "???",
+            "function_name": "std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)",
+            "count": 258285,
+            "cost": 58239955
+          },
+          {
+            "object_file": "/lib/x86_64-linux-gnu/libc-2.19.so",
+            "source_file": "/build/buildd/eglibc-2.19/string/../sysdeps/x86_64/multiarch/memcpy-sse2-unaligned.S",
+            "function_name": "__memcpy_sse2_unaligned",
+            "count": 253404,
+            "cost": 4325505
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<std::string, std::allocator<std::string>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+            "count": 250007,
+            "cost": 23100716
+          },
+          {
+            "object_file": "/home/jason/CIWork/ci_runs/ChaiScript-da1511a092-x86_64-gcc-4.8/build/chai",
+            "source_file": "???",
+            "function_name": "std::_Sp_counted_ptr_inplace<std::string, std::allocator<std::string>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)",
+            "count": 250007,
+            "cost": 1500042
+          }
+        ],
+        "test_name": "performance.type_conversions.chai"
+      }
+    ]
+  }
+}
