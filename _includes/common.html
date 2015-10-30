@@ -20,18 +20,14 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
+<script src="bower_components/lodash/lodash.min.js"></script>
+
 <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet">
 
 <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
 
 <script src="bower_components/d3/d3.min.js"></script>
 <style>
-/* tell the SVG path to be a thin blue line without any area fill */
-path {
-  stroke: steelblue;
-  stroke-width: 1;
-  fill: none;
-}
 
 .float-bottom {
   position: absolute;
@@ -98,5 +94,16 @@ $('table').each(function() {
 });
 });
 */
+
+function parseDate(d) {
+  var parsed_date = Date.parse(d);
+
+  if (isNaN(parsed_date)) {
+    return new Date(Date.parse(d.replace(/ /, "T").replace(/ /, "")));
+  } else {
+    return new Date(parsed_date);
+  }
+}
+
 </script>
 

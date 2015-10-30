@@ -5,6 +5,14 @@ title: Home Page
 
 <head>
 {% include common.html %}
+<style>
+/* tell the SVG path to be a thin blue line without any area fill */
+path {
+  stroke: steelblue;
+  stroke-width: 1;
+  fill: none;
+}
+</style>
 </head>
 
 {% for post in site.posts %}
@@ -34,9 +42,9 @@ var macos_enabled = (query["macos"] || query["macos"] == null) && query["macos"]
 var active_data_only = (query["activeonly"] || query["activeonly"] == null) && query["activeonly"] != "false";
 
 if (active_data_only) {
-  document.writeln("<ol class='breadcrumb'><li><a href='full_dashboard.html'>Full Dashboard</a></li><li>Active Dashboard</li></ol>");
+  document.writeln("<ol class='breadcrumb'><li><a href='full_dashboard.html'>Full Dashboard</a></li><li>Active Dashboard</li><li><a href='performance.html'>Performance</a></li></ol>");
 } else {
-  document.writeln("<ol class='breadcrumb'><li>Full Dashboard</li><li><a href='index.html'>Active Dashboard</a></li></ol>");
+  document.writeln("<ol class='breadcrumb'><li>Full Dashboard</li><li><a href='index.html'>Active Dashboard</a></li><li><a href='performance.html'>Performance</a></li></ol>");
 }
 
   </script>
@@ -189,13 +197,7 @@ function build_status_table(table_type, table_data)
 
   for (var i = 0; i < filtered_data.length; ++i)
   {
-    var parsed_date = Date.parse(filtered_data[i].date);
-
-    if (isNaN(parsed_date)) {
-      parsed_date = Date.parse(filtered_data[i].date.replace(/ /, "T").replace(/ /, ""));
-    }
-
-    filtered_data[i].js_date = new Date(parsed_date);
+    filtered_data[i].js_date = parseDate(filtered_data[i].date);
   }
 
   var min_date = new Date(0);

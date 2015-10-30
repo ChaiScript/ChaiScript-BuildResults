@@ -1,0 +1,273 @@
+---
+title: Home Page
+---
+
+
+<head>
+{% include common.html %}
+
+<style>
+.y.axis line, .y.axis path {
+  fill: none;
+  stroke: #000;
+}
+</style>
+
+</head>
+
+{% for post in site.posts %}
+{% if post.pull_request_issue_id == "" and post.repository %}
+{% capture base_repository %}{{ post.repository }}{% endcapture %}
+{% capture results_repository %}{{ post.results_repository }}{% endcapture %}
+{% break %}
+{% endif %}
+{% endfor %}
+
+{% include common_variables.html %}
+
+<body>
+  <script>
+
+document.writeln("<ol class='breadcrumb'><li><a href='full_dashboard.html'>Full Dashboard</a></li><li><a href='index.html'>Active Dashboard</a></li><li>Performance</li></ol>");
+
+  </script>
+
+
+  <div class="page-header">
+    <h1>Performance dashboard for {{ dashboard_title }}</h1>
+  </div>
+
+  <div id="graph"></div>
+
+  <script>
+
+var all_colors = d3.scale.category20().range().concat(d3.scale.category20b().range()).concat(d3.scale.category20c().range());
+
+var style = document.createElement('style');
+style.type = 'text/css';
+var style_string = ""
+for (var i = 0; i < all_colors.length; ++i)
+{
+  style_string += ".color" + i + " { color: " + all_colors[i] + "; }\n";
+}
+
+style.innerHTML = style_string;
+
+document.getElementsByTagName('head')[0].appendChild(style);
+
+
+var data = [
+{% for p in site.posts %}{% if p.performance_test_count and p.performance_test_count > 0 and p.performance_total_time and p.performance_total_time > 0 %} {% capture: jsonstring %}{% for d in p %}{% if d[0] != "next" and d[0] != "previous" and d[0] != "content" and d[0] != "excerpt" %}"{{ d[0] }}":{{ d[1] | jsonify }},{% endif %}{% endfor %}{% endcapture %} { configuration: { {{ jsonstring }} } }, {% endif %}
+{% endfor %}
+]
+
+
+var status_types = {
+  SUCCESS: 0,
+  FAIL: 1,
+  WARN: 2
+}
+
+var table_types = {
+  BRANCH: 0,
+  PULL_REQUEST: 1,
+  RELEASE: 2
+}
+
+var margin = {left: 80, right: 110, top: 80, bottom: 80};
+var width = 1024 - margin.left - margin.right;
+var height = 400 - margin.top - margin.bottom;
+var x = d3.scale.linear().range([0, width]);
+var y = d3.scale.linear().range([height, 0]);
+var line = d3.svg.line()
+  //  .interpolate("basis")
+  .x(function(d) { 
+    return x(d.date_bucket); 
+  })
+  .y(function(d) { 
+    return y(d.performance_total_time); 
+  });
+
+
+function sparkline(elemId, data) {
+
+  x.domain([0,data.date_buckets.length-1]);
+  y.domain(d3.extent(data.performance_costs));
+
+  var current_color = 0;
+
+  var svg = d3.select(elemId)
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom)
+    .append('g')
+    .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+  var dateFormatter = d3.time.format("%b %e");
+
+  var yAxis = d3.svg.axis().scale(y).orient("right").tickFormat(function(d) { return "" + (d/1000000); });
+  var xAxis = d3.svg.axis()
+  .scale(x)
+  .orient("bottom")
+  .tickFormat(function(d) { return dateFormatter(new Date(data.date_buckets[d][0])); })
+  .tickValues(_.range(data.date_buckets.length));
+
+
+
+  for (k in data.results) {
+    svg.append('path')
+      .datum(data.results[k])
+//      .attr('class', 'path')
+      .attr('d', line)
+      .attr('stroke', all_colors[current_color]);
+
+    for (var i = 0; i < data.results[k].length; ++i)
+    {
+      var date = data.results[k][i].date_bucket;
+      var cost = data.results[k][i].performance_total_time;
+
+      var cx = x(date);
+      var cy = y(cost);
+
+      svg.append('circle')
+        .attr('class', 'circle color' + current_color)
+        .attr('cx', cx)
+        .attr('cy', cy)
+        .attr('r', 4.0);
+
+//      var url = "{{ base_commit_url }}/" + data.results[k][i].commit_sha;
+      var url = "." + data.results[k][i].url;
+
+      svg.append('a').attr("xlink:href", url)
+        .append('circle')
+        .attr('class', 'mouse-over-circle')
+        .attr('cx', cx)
+        .attr('cy', cy)
+        .attr('r', 5.5)
+        .append('svg:title')
+        .text("branch: " + data.results[k][i].branch_name + "\nrepository: " + data.results[k][i].repository + "\nsha: " + data.results[k][i].commit_sha + "\ndevice: " + data.results[k][i].device_id + "\nNum Perf Tests: " + data.results[k][i].performance_test_count + "\nPerf Test Time: " + data.results[k][i].performance_total_time);
+    }
+
+    ++current_color;
+  }
+
+  // Add the y-axis.
+  svg.append("g")
+    .attr("class", "y axis")
+    .attr("transform", "translate(" + (width + 10) + ",0)")
+    .call(yAxis);
+
+  svg.append("g")
+    .attr("class", "y axis")
+    .attr("transform", "translate(0," + (height+ 10) +" )")
+    .call(xAxis);
+
+
+}
+
+
+function formatData(allData) {
+  var commits = {};
+  var results = {};
+  var performance_costs = [];
+  var dates = [];
+
+  for (var i = 0; i < allData.length; ++i)
+  {
+    var obj = {
+      "date": parseDate(allData[i].configuration.date),
+      "performance_test_count": allData[i].configuration.performance_test_count,
+      "performance_total_time": allData[i].configuration.performance_total_time,
+      "commit_sha": allData[i].configuration.commit_sha,
+      "device_id": allData[i].configuration.device_id,
+      "branch_name": allData[i].configuration.branch_name,
+      "repository": allData[i].configuration.repository,
+      "url": allData[i].configuration.url
+    };
+
+    performance_costs.push(obj.performance_total_time);
+
+    if (commits.hasOwnProperty(obj.commit_sha)) {
+      commits[obj.commit_sha].date = Math.min(obj.date, commits[obj.commit_sha].date);
+    } else {
+      commits[obj.commit_sha] = { "date": obj.date };
+    }
+
+    var resultsKey = [allData[i].configuration.branch_name, allData[i].configuration.repository, allData[i].configuration.device_id];
+    if (results.hasOwnProperty(resultsKey)) {
+      results[resultsKey].push(obj);
+    } else {
+      results[resultsKey] = [obj];
+    }
+  }
+
+  var date_buckets = []
+  for (var k in results) {
+    for (var i = 0; i < results[k].length; ++i) {
+      results[k][i].normalized_date = commits[results[k][i].commit_sha].date;
+      dates.push(results[k][i].normalized_date);
+
+      var date_bucket = [results[k][i].normalized_date, [k, results[k][i].commit_sha]]
+      if (!date_buckets.some(
+            function(element, index, array) {
+              return _.isEqual(element, date_bucket);
+            }
+            )) {
+        date_buckets.push(date_bucket)
+      }
+    }
+  }
+
+  dates = _.unique(dates.sort(), true);
+  performance_costs = _.unique(performance_costs.sort(), true);
+
+  date_buckets.sort(function(a,b) { return a[0] - b[0]; })
+
+  var date_buckets_compressed = [[date_buckets[0][0], [date_buckets[0][1]]]];
+  for (var i = 1; i < date_buckets.length; ++i) {
+    if (_.last(date_buckets_compressed)[1].some(
+          function(element, index, array){ 
+            return element[0] == date_buckets[i][1][0]  
+          })) {
+      date_buckets_compressed.push([date_buckets[i][0], [date_buckets[i][1]]]);
+    } else {
+      date_buckets_compressed[date_buckets_compressed.length-1][1].push(date_buckets[i][1]);
+    }
+  }
+
+  for (var key in results)
+  {
+    for (var i = 0; i < results[key].length; ++i)
+    {
+      var cont = true;
+      for (var j = 0; cont && j < date_buckets_compressed.length; ++j) {
+        for (var k = 0; cont && k < date_buckets_compressed[j][1].length; ++k) {
+          if (results[key][i].commit_sha == date_buckets_compressed[j][1][k][1] &&
+              key == date_buckets_compressed[j][1][k][0]) {
+            results[key][i].date_bucket = j;
+            cont = false;
+          }
+        }
+      }
+    }
+
+    results[key].sort(function(a,b) { return a.date_bucket - b.date_bucket; });
+  }
+
+
+
+  return {
+    "dates":dates,
+    "performance_costs": performance_costs,
+    "results": results,
+    "commits": commits,
+    "date_buckets": date_buckets_compressed
+  };
+}
+
+sparkline("#graph", formatData(data));
+
+  </script>
+
+
+</body>
