@@ -3,10 +3,10 @@ title: ChaiScript-21048b9e65f89708357519c0667d68f2384103f5-x86_64-Linux-Ubuntu-1
 permalink: ChaiScript-21048b9e65f89708357519c0667d68f2384103f5-x86_64-Linux-Ubuntu-14.04-cppcheck-1.61.html
 tags: data
 layout: ci_results
-date: '2016-01-12 03:12:50'
+date: '2016-01-12 03:24:38'
 unhandled_failure: false
 build_error_count: 0
-build_warning_count: 0
+build_warning_count: 12
 package_error_count: 0
 package_warning_count: 0
 test_count: 0
@@ -29,9 +29,9 @@ pull_request_issue_id: ''
 pull_request_base_repository: ''
 pull_request_base_ref: ''
 device_id: x86_64-Linux-Ubuntu-14.04-cppcheck-1.61
-pending: true
+pending: false
 analyze_only: true
-build_time: 
+build_time: 701.645464736
 test_time: 
 package_time: 
 install_time: 
@@ -57,7 +57,90 @@ performance_test_count: 0
 ---
 {
   "build_results": [
-
+    {
+      "filename": "samples/inheritance.cpp",
+      "linenumber": "83",
+      "colnumber": 0,
+      "messagetype": "style",
+      "message": "The function 'MakeDerived' is never used."
+    },
+    {
+      "filename": "samples/test_num_exceptions.cpp",
+      "linenumber": "10",
+      "colnumber": 0,
+      "messagetype": "style",
+      "message": "The scope of the variable 'script' can be reduced."
+    },
+    {
+      "filename": "unittests/boxed_cast_test.cpp",
+      "linenumber": "11",
+      "colnumber": 0,
+      "messagetype": "style",
+      "message": "The function 'run_test_type_conversion<To>' is never used."
+    },
+    {
+      "filename": "unittests/boxed_cast_test.cpp",
+      "linenumber": "40",
+      "colnumber": 0,
+      "messagetype": "style",
+      "message": "The function 'test_type_conversion<Type*const>' is never used."
+    },
+    {
+      "filename": "unittests/boxed_cast_test.cpp",
+      "linenumber": "40",
+      "colnumber": 0,
+      "messagetype": "style",
+      "message": "The function 'test_type_conversion<Type&>' is never used."
+    },
+    {
+      "filename": "unittests/boxed_cast_test.cpp",
+      "linenumber": "40",
+      "colnumber": 0,
+      "messagetype": "style",
+      "message": "The function 'test_type_conversion<Type*>' is never used."
+    },
+    {
+      "filename": "unittests/boxed_cast_test.cpp",
+      "linenumber": "40",
+      "colnumber": 0,
+      "messagetype": "style",
+      "message": "The function 'test_type_conversion<constType>' is never used."
+    },
+    {
+      "filename": "unittests/boxed_cast_test.cpp",
+      "linenumber": "40",
+      "colnumber": 0,
+      "messagetype": "style",
+      "message": "The function 'test_type_conversion<Type>' is never used."
+    },
+    {
+      "filename": "unittests/boxed_cast_test.cpp",
+      "linenumber": "40",
+      "colnumber": 0,
+      "messagetype": "style",
+      "message": "The function 'test_type_conversion<constType*const>' is never used."
+    },
+    {
+      "filename": "unittests/boxed_cast_test.cpp",
+      "linenumber": "40",
+      "colnumber": 0,
+      "messagetype": "style",
+      "message": "The function 'test_type_conversion<constType*>' is never used."
+    },
+    {
+      "filename": "unittests/boxed_cast_test.cpp",
+      "linenumber": "40",
+      "colnumber": 0,
+      "messagetype": "style",
+      "message": "The function 'test_type_conversion<constType&>' is never used."
+    },
+    {
+      "filename": "unittests/boxed_cast_test.cpp",
+      "linenumber": "57",
+      "colnumber": 0,
+      "messagetype": "style",
+      "message": "The function 'do_test<T>' is never used."
+    }
   ],
   "test_results": [
 
@@ -71,10 +154,10 @@ performance_test_count: 0
     "permalink": "ChaiScript-21048b9e65f89708357519c0667d68f2384103f5-x86_64-Linux-Ubuntu-14.04-cppcheck-1.61.html",
     "tags": "data",
     "layout": "ci_results",
-    "date": "2016-01-12 03:12:50",
+    "date": "2016-01-12 03:24:38",
     "unhandled_failure": false,
     "build_error_count": 0,
-    "build_warning_count": 0,
+    "build_warning_count": 12,
     "package_error_count": 0,
     "package_warning_count": 0,
     "test_count": 0,
@@ -97,9 +180,9 @@ performance_test_count: 0
     "pull_request_base_repository": "",
     "pull_request_base_ref": "",
     "device_id": "x86_64-Linux-Ubuntu-14.04-cppcheck-1.61",
-    "pending": true,
+    "pending": false,
     "analyze_only": true,
-    "build_time": null,
+    "build_time": 701.645464736,
     "test_time": null,
     "package_time": null,
     "install_time": null,
