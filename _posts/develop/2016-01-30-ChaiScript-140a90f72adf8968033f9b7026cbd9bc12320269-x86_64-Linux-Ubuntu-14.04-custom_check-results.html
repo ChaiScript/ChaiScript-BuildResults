@@ -3,10 +3,10 @@ title: ChaiScript-140a90f72adf8968033f9b7026cbd9bc12320269-x86_64-Linux-Ubuntu-1
 permalink: ChaiScript-140a90f72adf8968033f9b7026cbd9bc12320269-x86_64-Linux-Ubuntu-14.04-custom_check.html
 tags: data
 layout: ci_results
-date: '2016-01-30 00:32:56'
+date: '2016-01-30 00:33:04'
 unhandled_failure: false
 build_error_count: 0
-build_warning_count: 0
+build_warning_count: 3
 package_error_count: 0
 package_warning_count: 0
 test_count: 0
@@ -29,10 +29,10 @@ pull_request_issue_id: ''
 pull_request_base_repository: ''
 pull_request_base_ref: ''
 device_id: x86_64-Linux-Ubuntu-14.04-custom_check
-pending: true
+pending: false
 analyze_only: true
-build_time: 
-test_time: 
+build_time: 1.029440616
+test_time: 1.004426894
 package_time: 
 install_time: 
 results_repository: ChaiScript/ChaiScript-BuildResults
@@ -57,7 +57,27 @@ performance_test_count: 0
 ---
 {
   "build_results": [
-
+    {
+      "filename": "include/chaiscript/dispatchkit/type_conversions.hpp",
+      "linenumber": "314",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "[tab_checker] Source Code Line Contains Tabs"
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_parser.hpp",
+      "linenumber": "932",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "[tab_checker] Source Code Line Contains Tabs"
+    },
+    {
+      "filename": "samples/fun_call_performance.cpp",
+      "linenumber": "319",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "[tab_checker] Source Code Line Contains Tabs"
+    }
   ],
   "test_results": [
 
@@ -71,10 +91,10 @@ performance_test_count: 0
     "permalink": "ChaiScript-140a90f72adf8968033f9b7026cbd9bc12320269-x86_64-Linux-Ubuntu-14.04-custom_check.html",
     "tags": "data",
     "layout": "ci_results",
-    "date": "2016-01-30 00:32:56",
+    "date": "2016-01-30 00:33:04",
     "unhandled_failure": false,
     "build_error_count": 0,
-    "build_warning_count": 0,
+    "build_warning_count": 3,
     "package_error_count": 0,
     "package_warning_count": 0,
     "test_count": 0,
@@ -97,10 +117,10 @@ performance_test_count: 0
     "pull_request_base_repository": "",
     "pull_request_base_ref": "",
     "device_id": "x86_64-Linux-Ubuntu-14.04-custom_check",
-    "pending": true,
+    "pending": false,
     "analyze_only": true,
-    "build_time": null,
-    "test_time": null,
+    "build_time": 1.029440616,
+    "test_time": 1.004426894,
     "package_time": null,
     "install_time": null,
     "results_repository": "ChaiScript/ChaiScript-BuildResults",
