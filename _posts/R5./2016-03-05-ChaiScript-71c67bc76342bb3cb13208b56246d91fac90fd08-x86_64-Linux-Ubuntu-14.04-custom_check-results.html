@@ -3,10 +3,10 @@ title: ChaiScript-71c67bc76342bb3cb13208b56246d91fac90fd08-x86_64-Linux-Ubuntu-1
 permalink: ChaiScript-71c67bc76342bb3cb13208b56246d91fac90fd08-x86_64-Linux-Ubuntu-14.04-custom_check.html
 tags: data
 layout: ci_results
-date: '2016-03-05 20:19:56'
+date: '2016-03-05 20:20:07'
 unhandled_failure: false
 build_error_count: 0
-build_warning_count: 0
+build_warning_count: 24
 package_error_count: 0
 package_warning_count: 0
 test_count: 0
@@ -29,10 +29,10 @@ pull_request_issue_id: ''
 pull_request_base_repository: ''
 pull_request_base_ref: ''
 device_id: x86_64-Linux-Ubuntu-14.04-custom_check
-pending: true
+pending: false
 analyze_only: true
-build_time: 
-test_time: 
+build_time: 2.082117012
+test_time: 1.007466744
 package_time: 
 install_time: 
 results_repository: ChaiScript/ChaiScript-BuildResults
@@ -57,7 +57,174 @@ performance_test_count: 0
 ---
 {
   "build_results": [
-
+    {
+      "filename": "include/chaiscript/chaiscript_defines.hpp",
+      "linenumber": "56",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo Make this support other compilers when possible"
+    },
+    {
+      "filename": "include/chaiscript/chaiscript_threading.hpp",
+      "linenumber": "158",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo this leaks thread instances. It needs to be culled from time to time"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/bootstrap_stl.hpp",
+      "linenumber": "38",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo Update the Range code to base its capabilities on"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/bootstrap_stl.hpp",
+      "linenumber": "251",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo we are prefering to keep the key as 'int' to avoid runtime conversions"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/bootstrap_stl.hpp",
+      "linenumber": "259",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo we are prefering to keep the key as 'int' to avoid runtime conversions"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/boxed_value.hpp",
+      "linenumber": "33",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo Get rid of Any and merge it with this, reducing an allocation in the process"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/boxed_value.hpp",
+      "linenumber": "411",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo support C++11 strongly typed enums"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/dispatchkit.hpp",
+      "linenumber": "224",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo Should we throw an error if there's a name conflict"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/exception_specification.hpp",
+      "linenumber": "26",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo make this a variadic template"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/function_call_detail.hpp",
+      "linenumber": "140",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo what happens if t_conversions is deleted out from under us?!"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/operators.hpp",
+      "linenumber": "21",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo make this return a decltype once we drop gcc 4.6"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/operators.hpp",
+      "linenumber": "82",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo make this return a decltype once we drop gcc 4.6"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/proxy_functions_detail.hpp",
+      "linenumber": "70",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo REMOVE THIS WHEN WE DROP G++4.6"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/proxy_functions_detail.hpp",
+      "linenumber": "132",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: #pragma warning(disable : 4100) /// Disable unreferenced formal parameter warning, which only shows up in MSVC I don't think there's any way around it \\todo evaluate this"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/type_conversions.hpp",
+      "linenumber": "202",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo fix this someday after libc++ is fixed."
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/type_conversions.hpp",
+      "linenumber": "300",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo better handling of errors from the conversion function"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/type_conversions.hpp",
+      "linenumber": "372",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo error if a conversion already exists"
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_common.hpp",
+      "linenumber": "437",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: const int identifier; //< \\todo shouldn't this be a strongly typed enum value?"
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_eval.hpp",
+      "linenumber": "429",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo This does not handle the case of an unassigned reference variable"
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_eval.hpp",
+      "linenumber": "831",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo do this better"
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_parser.hpp",
+      "linenumber": "415",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo fix the fact that a successful match that captured no ast_nodes doesn't have any real start position"
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_parser.hpp",
+      "linenumber": "2005",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo Work around for method calls until we have a better solution"
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_parser.hpp",
+      "linenumber": "2421",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo respect // -*- coding: utf-8 -*- on line 1 or 2 see: http://evanjones.ca/python-utf8.html)"
+    },
+    {
+      "filename": "src/test_module.cpp",
+      "linenumber": "163",
+      "colnumber": 0,
+      "messagetype": "info",
+      "message": "[todo_checker] todo: /// \\todo automatic chaining of base classes?"
+    }
   ],
   "test_results": [
 
@@ -71,10 +238,10 @@ performance_test_count: 0
     "permalink": "ChaiScript-71c67bc76342bb3cb13208b56246d91fac90fd08-x86_64-Linux-Ubuntu-14.04-custom_check.html",
     "tags": "data",
     "layout": "ci_results",
-    "date": "2016-03-05 20:19:56",
+    "date": "2016-03-05 20:20:07",
     "unhandled_failure": false,
     "build_error_count": 0,
-    "build_warning_count": 0,
+    "build_warning_count": 24,
     "package_error_count": 0,
     "package_warning_count": 0,
     "test_count": 0,
@@ -97,10 +264,10 @@ performance_test_count: 0
     "pull_request_base_repository": "",
     "pull_request_base_ref": "",
     "device_id": "x86_64-Linux-Ubuntu-14.04-custom_check",
-    "pending": true,
+    "pending": false,
     "analyze_only": true,
-    "build_time": null,
-    "test_time": null,
+    "build_time": 2.082117012,
+    "test_time": 1.007466744,
     "package_time": null,
     "install_time": null,
     "results_repository": "ChaiScript/ChaiScript-BuildResults",
