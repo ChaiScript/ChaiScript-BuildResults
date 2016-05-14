@@ -3,10 +3,10 @@ title: ChaiScript-ee68ff20ed89ed6f618884eac92814c6c17e47b3-PR270-x86_64-Linux-Ub
 permalink: ChaiScript-ee68ff20ed89ed6f618884eac92814c6c17e47b3-PR270-x86_64-Linux-Ubuntu-14.04-cppcheck-1.61.html
 tags: data
 layout: ci_results
-date: '2016-05-14 16:44:54'
+date: '2016-05-14 16:55:04'
 unhandled_failure: false
 build_error_count: 0
-build_warning_count: 0
+build_warning_count: 25
 package_error_count: 0
 package_warning_count: 0
 test_count: 0
@@ -29,9 +29,9 @@ pull_request_issue_id: '270'
 pull_request_base_repository: ChaiScript/ChaiScript
 pull_request_base_ref: develop
 device_id: x86_64-Linux-Ubuntu-14.04-cppcheck-1.61
-pending: true
+pending: false
 analyze_only: true
-build_time: 
+build_time: 601.786617519
 test_time: 
 package_time: 
 install_time: 
@@ -57,7 +57,181 @@ performance_test_count: 0
 ---
 {
   "build_results": [
-
+    {
+      "filename": "*",
+      "linenumber": "0",
+      "colnumber": 0,
+      "messagetype": "information",
+      "message": "Unmatched suppression: unusedFunction"
+    },
+    {
+      "filename": "include/chaiscript/dispatchkit/boxed_value.hpp",
+      "linenumber": "243",
+      "colnumber": 0,
+      "messagetype": "style",
+      "message": "'operator=' should return reference to 'this' instance."
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_parser.hpp",
+      "linenumber": "281",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'ChaiScript_Parser::m_operator_matches' is not initialized in the constructor."
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_parser.hpp",
+      "linenumber": "281",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'ChaiScript_Parser::m_operators' is not initialized in the constructor."
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_parser.hpp",
+      "linenumber": "281",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'ChaiScript_Parser::m_alphabet' is not initialized in the constructor."
+    },
+    {
+      "filename": "include/chaiscript/utility/json.hpp",
+      "linenumber": "85",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Redundant code: Found a statement that begins with numeric constant."
+    },
+    {
+      "filename": "include/chaiscript/utility/json.hpp",
+      "linenumber": "105",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Redundant code: Found a statement that begins with numeric constant."
+    },
+    {
+      "filename": "src/test_module.cpp",
+      "linenumber": "11",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'TestBaseType::const_val_ptr' is not initialized in the constructor."
+    },
+    {
+      "filename": "src/test_module.cpp",
+      "linenumber": "12",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'TestBaseType::const_val_ptr' is not initialized in the constructor."
+    },
+    {
+      "filename": "src/test_module.cpp",
+      "linenumber": "13",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Member variable 'TestBaseType::const_val_ptr' is not initialized in the constructor."
+    },
+    {
+      "filename": "unittests/compiled_tests.cpp",
+      "linenumber": "171",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Comparison of a boolean value using relational operator (<, >, <= or >=)."
+    },
+    {
+      "filename": "unittests/compiled_tests.cpp",
+      "linenumber": "184",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Comparison of a boolean value using relational operator (<, >, <= or >=)."
+    },
+    {
+      "filename": "unittests/compiled_tests.cpp",
+      "linenumber": "196",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Comparison of a boolean value using relational operator (<, >, <= or >=)."
+    },
+    {
+      "filename": "unittests/compiled_tests.cpp",
+      "linenumber": "208",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Comparison of a boolean value using relational operator (<, >, <= or >=)."
+    },
+    {
+      "filename": "unittests/compiled_tests.cpp",
+      "linenumber": "210",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Comparison of a boolean value using relational operator (<, >, <= or >=)."
+    },
+    {
+      "filename": "unittests/compiled_tests.cpp",
+      "linenumber": "212",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Comparison of a boolean value using relational operator (<, >, <= or >=)."
+    },
+    {
+      "filename": "unittests/compiled_tests.cpp",
+      "linenumber": "214",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Comparison of a boolean value using relational operator (<, >, <= or >=)."
+    },
+    {
+      "filename": "unittests/compiled_tests.cpp",
+      "linenumber": "216",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Comparison of a boolean value using relational operator (<, >, <= or >=)."
+    },
+    {
+      "filename": "unittests/compiled_tests.cpp",
+      "linenumber": "218",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Comparison of a boolean value using relational operator (<, >, <= or >=)."
+    },
+    {
+      "filename": "unittests/compiled_tests.cpp",
+      "linenumber": "228",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Comparison of a boolean value using relational operator (<, >, <= or >=)."
+    },
+    {
+      "filename": "unittests/compiled_tests.cpp",
+      "linenumber": "230",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Comparison of a boolean value using relational operator (<, >, <= or >=)."
+    },
+    {
+      "filename": "unittests/compiled_tests.cpp",
+      "linenumber": "232",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Comparison of a boolean value using relational operator (<, >, <= or >=)."
+    },
+    {
+      "filename": "unittests/compiled_tests.cpp",
+      "linenumber": "234",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Comparison of a boolean value using relational operator (<, >, <= or >=)."
+    },
+    {
+      "filename": "unittests/compiled_tests.cpp",
+      "linenumber": "236",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Comparison of a boolean value using relational operator (<, >, <= or >=)."
+    },
+    {
+      "filename": "unittests/compiled_tests.cpp",
+      "linenumber": "238",
+      "colnumber": 0,
+      "messagetype": "warning",
+      "message": "Comparison of a boolean value using relational operator (<, >, <= or >=)."
+    }
   ],
   "test_results": [
 
@@ -71,10 +245,10 @@ performance_test_count: 0
     "permalink": "ChaiScript-ee68ff20ed89ed6f618884eac92814c6c17e47b3-PR270-x86_64-Linux-Ubuntu-14.04-cppcheck-1.61.html",
     "tags": "data",
     "layout": "ci_results",
-    "date": "2016-05-14 16:44:54",
+    "date": "2016-05-14 16:55:04",
     "unhandled_failure": false,
     "build_error_count": 0,
-    "build_warning_count": 0,
+    "build_warning_count": 25,
     "package_error_count": 0,
     "package_warning_count": 0,
     "test_count": 0,
@@ -97,9 +271,9 @@ performance_test_count: 0
     "pull_request_base_repository": "ChaiScript/ChaiScript",
     "pull_request_base_ref": "develop",
     "device_id": "x86_64-Linux-Ubuntu-14.04-cppcheck-1.61",
-    "pending": true,
+    "pending": false,
     "analyze_only": true,
-    "build_time": null,
+    "build_time": 601.786617519,
     "test_time": null,
     "package_time": null,
     "install_time": null,
