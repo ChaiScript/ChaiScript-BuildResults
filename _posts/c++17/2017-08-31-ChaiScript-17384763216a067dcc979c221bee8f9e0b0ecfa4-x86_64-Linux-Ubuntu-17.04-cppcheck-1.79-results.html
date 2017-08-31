@@ -3,10 +3,10 @@ title: ChaiScript-17384763216a067dcc979c221bee8f9e0b0ecfa4-x86_64-Linux-Ubuntu-1
 permalink: ChaiScript-17384763216a067dcc979c221bee8f9e0b0ecfa4-x86_64-Linux-Ubuntu-17.04-cppcheck-1.79.html
 tags: data
 layout: ci_results
-date: '2017-08-31 21:40:39'
+date: '2017-08-31 21:41:05'
 unhandled_failure: false
-build_error_count: 0
-build_warning_count: 0
+build_error_count: 3
+build_warning_count: 6
 package_error_count: 0
 package_warning_count: 0
 test_count: 0
@@ -29,9 +29,9 @@ pull_request_issue_id: ''
 pull_request_base_repository: ''
 pull_request_base_ref: ''
 device_id: x86_64-Linux-Ubuntu-17.04-cppcheck-1.79
-pending: true
+pending: false
 analyze_only: true
-build_time: 
+build_time: 18.575989815
 test_time: 
 package_time: 
 install_time: 
@@ -55,7 +55,69 @@ performance_test_count: 0
 ---
 {
   "build_results": [
-
+    {
+      "filename": "include/chaiscript/dispatchkit/type_conversions.hpp",
+      "linenumber": "571",
+      "colnumber": 0,
+      "messagetype": "error",
+      "message": "syntax error"
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_parser.hpp",
+      "linenumber": "800",
+      "colnumber": 0,
+      "messagetype": "information",
+      "message": "Skipping configuration 'min' since the value of 'min' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly."
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_parser.hpp",
+      "linenumber": "802",
+      "colnumber": 0,
+      "messagetype": "information",
+      "message": "Skipping configuration 'min' since the value of 'min' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly."
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_parser.hpp",
+      "linenumber": "804",
+      "colnumber": 0,
+      "messagetype": "information",
+      "message": "Skipping configuration 'min' since the value of 'min' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly."
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_parser.hpp",
+      "linenumber": "806",
+      "colnumber": 0,
+      "messagetype": "information",
+      "message": "Skipping configuration 'min' since the value of 'min' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly."
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_parser.hpp",
+      "linenumber": "808",
+      "colnumber": 0,
+      "messagetype": "information",
+      "message": "Skipping configuration 'min' since the value of 'min' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly."
+    },
+    {
+      "filename": "include/chaiscript/language/chaiscript_parser.hpp",
+      "linenumber": "820",
+      "colnumber": 0,
+      "messagetype": "information",
+      "message": "Skipping configuration 'min' since the value of 'min' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly."
+    },
+    {
+      "filename": "unittests/compiled_tests.cpp",
+      "linenumber": "37",
+      "colnumber": 0,
+      "messagetype": "error",
+      "message": "failed to expand 'TEST_CASE', Wrong number of parameters for macro 'TEST_CASE'."
+    },
+    {
+      "filename": "unittests/type_info_test.cpp",
+      "linenumber": "28",
+      "colnumber": 0,
+      "messagetype": "error",
+      "message": "failed to expand 'TEST_CASE', Wrong number of parameters for macro 'TEST_CASE'."
+    }
   ],
   "test_results": [
 
@@ -69,10 +131,10 @@ performance_test_count: 0
     "permalink": "ChaiScript-17384763216a067dcc979c221bee8f9e0b0ecfa4-x86_64-Linux-Ubuntu-17.04-cppcheck-1.79.html",
     "tags": "data",
     "layout": "ci_results",
-    "date": "2017-08-31 21:40:39",
+    "date": "2017-08-31 21:41:05",
     "unhandled_failure": false,
-    "build_error_count": 0,
-    "build_warning_count": 0,
+    "build_error_count": 3,
+    "build_warning_count": 6,
     "package_error_count": 0,
     "package_warning_count": 0,
     "test_count": 0,
@@ -95,9 +157,9 @@ performance_test_count: 0
     "pull_request_base_repository": "",
     "pull_request_base_ref": "",
     "device_id": "x86_64-Linux-Ubuntu-17.04-cppcheck-1.79",
-    "pending": true,
+    "pending": false,
     "analyze_only": true,
-    "build_time": null,
+    "build_time": 18.575989815,
     "test_time": null,
     "package_time": null,
     "install_time": null,
